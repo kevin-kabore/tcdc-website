@@ -1,0 +1,28 @@
+section.hero {
+	background-color: $plum;
+	font-size: rem(46, $text-bp-sm); 
+	color: #fff; //white
+	@include bp-medium {
+		// bp-medium is like a media query for medium screens
+		// use rem(pixels, $text-bp-md) for medium font sizes, widths, padding etc
+		// use rem(pixels, $text-bp-sm) for small font sizes, widths, padding etc 
+		height: rem(748, $text-bp-md);		
+		font-size: rem(46, $text-bp-md);
+	}
+	.preheader, .header {
+		padding:  rem(20, $text-bp-sm) rem(50, $text-bp-sm);
+		@include bp-medium {
+			padding-top:  rem(50, $text-bp-md);
+			padding-left:  rem(136, $text-bp-md);	
+		}
+	}
+
+	.section-inner {
+		#house-img {
+			@include bp-medium {
+				width: rem(768, $text-bp-md);
+				
+			}
+		}
+	}
+}
