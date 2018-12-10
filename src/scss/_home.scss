@@ -16,13 +16,40 @@ section.hero {
 			padding-left:  rem(136, $text-bp-md);	
 		}
 	}
+	.header {
+		font-weight: bold;  
+	}
 
 	.section-inner {
+		@include bp-medium{
+			display: flex;
+    		justify-content: flex-end;
+		}
 		#house-img {
+			width: 100%;
 			@include bp-medium {
 				width: rem(768, $text-bp-md);
 				
 			}
+			@include bp-large {
+
+				width: rem(768, $text-bp-lg);
+			}
 		}
 	}
 }
+
+// section.sub-hero {
+// 	#tanja-img{height:rem(161);
+// 	 	width:rem(241.5);
+// 	 	padding-top: ;
+
+// 		@include bp-medium {
+
+// 		}
+// 	}
+// 	.content{
+// 		background-color: $plum;
+
+// 	}
+// }
