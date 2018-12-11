@@ -26,30 +26,86 @@ section.hero {
     		justify-content: flex-end;
 		}
 		#house-img {
-			width: 100%;
-			@include bp-medium {
-				width: rem(768, $text-bp-md);
-				
+				width: 100%;
+			    width: 384px;
+    			height: 174.5px;
+    			padding-top: 100px;
+				@include bp-medium {
+					width: rem(768, $text-bp-md);
+				@include bp-large {
+					width: rem(768, $text-bp-lg);
+					}
+				}
 			}
-			@include bp-large {
+        }
+    }
+// adjust for large and small screens?
+section.sub-hero {  
+	@include bp-medium {
+		background-color: $white;
+		font-size: rem(32px);
+		font-weight: 400;
+		height: 1150px;
+	}
+	.header{
+	@include bp-medium{
+			padding-left:230px;
+			font-size: 45px;
+			position: absolute;
+			padding-top:270px;
 
-				width: rem(768, $text-bp-lg);
-			}
 		}
+	}
+	.body-text{
+		position: absolute;
+    	padding-left: 700px;
+    	padding-top: 580px;
+	}
+// Move text in button to middle of button
+	.btn-lg-red{
+		@include bp-medium;
+		display:block;
+		height:88px;
+		width:260px;
+		margin-left:700px;
+		background-color: $plum;
+		display:flex;
+		align-content:center;
+		justify-content:center;
+		color: $white;
+		font-size: rem(22, $text-bp-md);
+
+		}
+
+	      #tanja-img {
+	      	display: flex;
+	      	justify-content: flex-start;
+	      	padding-top:50%;
+	        width: 100%;
+	        width: 322px;
+	        height: 483px;
+			}
+	
+
+		}
+section.our-services{
+	height: rem(700, $text-bp-md);
+	background-color: $white;
+	@include bp-medium;
+		.header{
+			color: $black;
+			font-size: rem(22, $text-bp-md);
+			padding-left: 100px;		
+	}
+		.plan, .land, .building, .operations{
+			background-color: #f9f4f4;
+			
 	}
 }
 
-// section.sub-hero {
-// 	#tanja-img{height:rem(161);
-// 	 	width:rem(241.5);
-// 	 	padding-top: ;
 
-// 		@include bp-medium {
 
-// 		}
-// 	}
-// 	.content{
-// 		background-color: $plum;
 
-// 	}
-// }
+
+
+
