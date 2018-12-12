@@ -62,20 +62,41 @@ section.sub-hero {
     	padding-top: 580px;
 	}
 // Move text in button to middle of button
-	.btn-lg-red{
-		@include bp-medium;
-		display:block;
-		height:88px;
-		width:260px;
-		margin-left:700px;
-		background-color: $plum;
-		display:flex;
-		align-content:center;
-		justify-content:center;
-		color: $white;
-		font-size: rem(22, $text-bp-md);
+	// .btn-lg-red{
+	// 	@include bp-medium;
+	// 	display:block;
+	// 	height:88px;
+	// 	width:260px;
+	// 	margin-left:700px;
+	// 	background-color: $plum;
+	// 	display:flex;
+	// 	align-content:center;
+	// 	justify-content:center;
+	// 	color: $white;
+	// 	font-size: rem(22, $text-bp-md);
 
-		}
+	// 	}
+.btn-lg-red {
+	cursor: pointer;
+	text-align: center;
+	background-color: $brick;
+	color: $white;
+	width: rem(256, $text-bp-sm);
+	font-size: rem(22, $text-bp-sm);
+	padding: rem(20px, $text-bp-sm) rem(25px, $text-bp-sm);
+	border-radius: rem(5, $text-bp-sm);
+	margin:  rem(20, $text-bp-sm) auto;
+
+	@include bp-medium {
+		margin-left: 700px;
+		// margin:  0 auto;
+		width: rem(256, $text-bp-md);
+		font-size: rem(22, $text-bp-md);
+		padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
+		border-radius: rem(5, $text-bp-md);
+	}
+
+}
 
 	      #tanja-img {
 	      	display: flex;
@@ -88,7 +109,7 @@ section.sub-hero {
 	
 
 		}
-section.our-services{
+section.our-services{   
 	height: rem(700, $text-bp-md);
 	background-color: $white;
 	@include bp-medium;
