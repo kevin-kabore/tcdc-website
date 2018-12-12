@@ -2,10 +2,76 @@
 	max-width: 1440px;
 	margin: 0 auto;
 	font-family: Muli;
+	padding: rem(20, $text-bp-sm);
+	overflow: hidden;
+	@include bp-medium {
+		padding: rem(75, $text-bp-md) rem(60, $text-bp-md);
+	}
+	@include bp-large {
+		padding: rem(75, $text-bp-lg) rem(60, $text-bp-lg);
+		margin: 0 auto;
+	}
+}
+
+.section.hero {
+	
+
 }
 
 .line {
 	height: 2px;
 	background-color: #e7d7d6;
 	margin: 0 auto;
+	@include bp-medium {
+		// flex-direction: row;
+		margin-left: rem(75, $text-bp-md); 
+		margin-right: rem(75, $text-bp-md); 
+	}
+	@include bp-large {
+		margin-left: rem(75, $text-bp-lg); 
+		margin-right: rem(75, $text-bp-lg); 	
+	}
+}
+
+.row {
+	display: flex;
+	
+	flex-direction: column;
+	@include bp-medium {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-end;
+	}
+}
+
+.btn.lg.red {
+	cursor: pointer;
+	text-align: center;
+	background-color: $brick;
+	color: $white;
+
+	width: rem(256, $text-bp-sm);
+	font-size: rem(22, $text-bp-sm);
+	padding: rem(20px, $text-bp-sm) rem(25px, $text-bp-sm);
+	border-radius: rem(5, $text-bp-sm);
+	margin:  rem(20, $text-bp-sm) auto;
+	@include bp-medium {
+		margin:  0 auto;
+
+		width: rem(256, $text-bp-md);
+		font-size: rem(22, $text-bp-md);
+		padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
+		border-radius: rem(5, $text-bp-md);
+	}
+	@include bp-large {
+		width: rem(256, $text-bp-lg);
+		font-size: rem(22, $text-bp-lg);
+		padding: rem(25px, $text-bp-lg) rem(25px, $text-bp-lg);
+		border-radius: rem(5, $text-bp-lg);
+	}
+	&:hover, &:active {
+		color: $brick;
+		background-color: $white;
+		border: 1px solid $brick;
+	}
 }

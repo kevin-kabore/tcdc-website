@@ -2,15 +2,25 @@
 	background-color: $plum;
 	padding: rem(24px, $text-bp-sm);
 	@include bp-medium {
-		padding: rem(24px, $text-bp-md) rem(113px, $text-bp-md) 0 rem(113px, $text-bp-md);
+		padding: rem(24px, $text-bp-md) rem(60, $text-bp-md) 0 rem(60px, $text-bp-md);
+	}
+	@include bp-large {
+		padding: rem(24px, $text-bp-lg) rem(60, $text-bp-lg) 0 rem(60px, $text-bp-lg);
 	}
 	.container {
 		display: flex;
-		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
+
+		flex-direction: column;
 		@include bp-medium {
 			flex-direction: row;
+			margin-left: rem(75, $text-bp-md); 
+			margin-right: rem(75, $text-bp-md); 
+		}
+		@include bp-large {
+			margin-left: rem(75, $text-bp-lg); 
+			margin-right: rem(75, $text-bp-lg); 	
 		}
 		.nav-links {
 			list-style: none;
