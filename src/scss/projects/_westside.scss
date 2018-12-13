@@ -1,5 +1,77 @@
 #westside {
-	section.hero {
+	.section.hero {
 		height: auto;
 	}
+	.section.main {
+		.section-row:nth-child(even) {
+			background-color: #f9f4f4;
+		}
+		.section-row.top {
+			.description {
+				margin: 0 auto;
+				font-size: rem(22, $text-bp-sm);
+				margin-bottom: rem(50, $text-bp-sm);
+				@include bp-medium {
+					width: 90%;
+					font-size: rem(22, $text-bp-md);
+					margin-bottom: rem(50, $text-bp-md);
+				}
+				@include bp-large {
+					width: 82%;
+					font-size: rem(22, $text-bp-lg);
+					margin-bottom: rem(50, $text-bp-lg);
+				}
+			}
+			.row {
+				@include bp-medium {
+					justify-content: flex-start;
+					align-items: flex-start;
+				}
+				#westside-img-1 {
+					width: 100%;
+					@include bp-medium {
+						z-index: 1;
+						
+						width: rem(816, $text-bp-md);
+						margin-right: rem(50, $text-bp-md);
+					}
+					@include bp-large {
+						width: rem(816, $text-bp-lg);
+						margin-right: rem(50, $text-bp-lg);
+					}
+				}
+				.box {
+					
+					@include bp-medium {
+						margin-top: rem(50, $text-bp-md);
+					}
+					@include bp-large {
+						margin-top: rem(50, $text-bp-lg);
+					}
+				}
+
+			}
+
+		}
+	}
+	.section-row.middle {
+		#westside-img-2 {
+			width: 100%;
+			@include bp-medium {
+				position: relative;
+
+
+				left: rem(720, $text-bp-md);
+				width: rem(701, $text-bp-md);
+				bottom: rem(100, $text-bp-md);
+			}
+			@include bp-large {
+				width: rem(701, $text-bp-lg);
+				left: rem(720, $text-bp-lg);
+				bottom: rem(100, $text-bp-lg);
+			}
+		}
+	}
+
+
 }

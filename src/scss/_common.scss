@@ -13,7 +13,7 @@
 	}
 }
 
-section.hero {
+.section.hero {
 	background-color: $plum;
 	font-size: rem(46, $text-bp-sm); 
 	color: #fff;
@@ -101,4 +101,63 @@ section.hero {
 		background-color: $white;
 		border: 1px solid $brick;
 	}
+}
+
+
+.box {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	min-width: rem(300, $text-bp-sm);
+	min-height: rem(300, $text-bp-sm);
+	@include bp-medium {
+		min-width: rem(250, $text-bp-md);
+		min-height: rem(250, $text-bp-md);
+	}
+	@include bp-large {
+		min-width: rem(250, $text-bp-lg);
+		min-height: rem(250, $text-bp-lg);
+	}
+	p {
+		margin: 0;
+		@include bp-medium {
+			padding: 0 rem(25, $text-bp-md);
+		}
+		@include bp-large {
+			padding: 0 rem(25, $text-bp-lg);
+		}
+	}
+	.header {
+		font-size: rem(60, $text-bp-sm);
+		@include bp-medium {
+			font-size: rem(60, $text-bp-md);
+		}
+		@include bp-large {
+			font-size: rem(60, $text-bp-lg);
+		}	
+	}
+	.subheader {
+		font-weight: 100;
+
+		font-size: rem(40, $text-bp-sm);
+		@include bp-medium {
+			font-size: rem(40, $text-bp-md);
+		}
+		@include bp-large {
+			font-size: rem(40, $text-bp-lg);
+		}
+	}
+}
+.box.brick {
+	background-color: $brick;
+}
+.box.plum {
+	background-color: $plum;
+}
+.box.green {
+	background-color: #00b241;
 }
