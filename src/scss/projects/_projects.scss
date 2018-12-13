@@ -1,17 +1,4 @@
 #projects {
-	.section.hero {
-		height: auto;
-		.header {
-			padding-left: 0;
-			@include bp-medium {
-				padding-left: rem(30, $text-bp-md);
-			}
-			@include bp-medium {
-				padding-left: rem(30, $text-bp-lg);
-			}
-
-		}
-	}
 	.section.main {
 		.row {
 			margin-bottom: rem(50, $text-bp-sm);

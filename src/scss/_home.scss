@@ -1,128 +1,128 @@
-section.hero {
-	background-color: $plum;
-	font-size: rem(46, $text-bp-sm); 
-	color: #fff; //white
-	@include bp-medium {
-		// bp-medium is like a media query for medium screens
-		// use rem(pixels, $text-bp-md) for medium font sizes, widths, padding etc
-		// use rem(pixels, $text-bp-sm) for small font sizes, widths, padding etc 
-		height: rem(748, $text-bp-md);		
-		font-size: rem(46, $text-bp-md);
-	}
-	.preheader, .header {
-		padding:  rem(20, $text-bp-sm) rem(50, $text-bp-sm);
+#home {
+	section.hero {
 		@include bp-medium {
-			padding-top:  rem(50, $text-bp-md);
-			padding-left:  rem(136, $text-bp-md);	
+			// bp-medium is like a media query for medium screens
+			// use rem(pixels, $text-bp-md) for medium font sizes, widths, padding etc
+			// use rem(pixels, $text-bp-sm) for small font sizes, widths, padding etc 
+			height: rem(748, $text-bp-md);		
 		}
-	}
-	.header {
-		font-weight: bold;  
-	}
+		.preheader, .header {
+			padding:  rem(20, $text-bp-sm) rem(50, $text-bp-sm);
+			@include bp-medium {
+				padding-top:  rem(50, $text-bp-md);
+				padding-left:  rem(136, $text-bp-md);	
+			}
+		}
+		.header {
+			font-weight: bold;  
+		}
 
-	.section-inner {
-		@include bp-medium{
-			display: flex;
-    		justify-content: flex-end;
-		}
-		#house-img {
-				width: 100%;
-			    width: 384px;
-    			height: 174.5px;
-    			padding-top: 100px;
-				@include bp-medium {
-					width: rem(768, $text-bp-md);
-				@include bp-large {
-					width: rem(768, $text-bp-lg);
+		.section-inner {
+			@include bp-medium{
+				display: flex;
+	    		justify-content: flex-end;
+			}
+			#house-img {
+					width: 100%;
+				    width: 384px;
+	    			height: 174.5px;
+	    			padding-top: 100px;
+					@include bp-medium {
+						width: rem(768, $text-bp-md);
+					@include bp-large {
+						width: rem(768, $text-bp-lg);
+						}
 					}
 				}
-			}
-        }
-    }
-// adjust for large and small screens?
-section.sub-hero {  
-	@include bp-medium {
-		background-color: $white;
-		font-size: rem(32px);
-		font-weight: 400;
-		height: 1150px;
-	}
-	.header{
-	@include bp-medium{
-			padding-left:230px;
-			font-size: 45px;
-			position: absolute;
-			padding-top:270px;
-
+	        }
+	    }
+	// adjust for large and small screens?
+	section.sub-hero {  
+		@include bp-medium {
+			background-color: $white;
+			font-size: rem(32px);
+			font-weight: 400;
+			height: 1150px;
 		}
-	}
-	.body-text{
-		position: absolute;
-    	padding-left: 700px;
-    	padding-top: 580px;
-	}
-// Move text in button to middle of button
-	// .btn-lg-red{
-	// 	@include bp-medium;
-	// 	display:block;
-	// 	height:88px;
-	// 	width:260px;
-	// 	margin-left:700px;
-	// 	background-color: $plum;
-	// 	display:flex;
-	// 	align-content:center;
-	// 	justify-content:center;
-	// 	color: $white;
-	// 	font-size: rem(22, $text-bp-md);
-
-	// 	}
-.btn-lg-red {
-	cursor: pointer;
-	text-align: center;
-	background-color: $brick;
-	color: $white;
-	width: rem(256, $text-bp-sm);
-	font-size: rem(22, $text-bp-sm);
-	padding: rem(20px, $text-bp-sm) rem(25px, $text-bp-sm);
-	border-radius: rem(5, $text-bp-sm);
-	margin:  rem(20, $text-bp-sm) auto;
-
-	@include bp-medium {
-		margin-left: 700px;
-		// margin:  0 auto;
-		width: rem(256, $text-bp-md);
-		font-size: rem(22, $text-bp-md);
-		padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
-		border-radius: rem(5, $text-bp-md);
-	}
-
-}
-
-	      #tanja-img {
-	      	display: flex;
-	      	justify-content: flex-start;
-	      	padding-top:50%;
-	        width: 100%;
-	        width: 322px;
-	        height: 483px;
-			}
-	
-
-		}
-section.our-services{   
-	height: rem(700, $text-bp-md);
-	background-color: $white;
-	@include bp-medium;
 		.header{
-			color: $black;
+		@include bp-medium{
+				padding-left:230px;
+				font-size: 45px;
+				position: absolute;
+				padding-top:270px;
+
+			}
+		}
+		.body-text{
+			position: absolute;
+	    	padding-left: 700px;
+	    	padding-top: 580px;
+		}
+	// Move text in button to middle of button
+		// .btn-lg-red{
+		// 	@include bp-medium;
+		// 	display:block;
+		// 	height:88px;
+		// 	width:260px;
+		// 	margin-left:700px;
+		// 	background-color: $plum;
+		// 	display:flex;
+		// 	align-content:center;
+		// 	justify-content:center;
+		// 	color: $white;
+		// 	font-size: rem(22, $text-bp-md);
+
+		// 	}
+	.btn-lg-red {
+		cursor: pointer;
+		text-align: center;
+		background-color: $brick;
+		color: $white;
+		width: rem(256, $text-bp-sm);
+		font-size: rem(22, $text-bp-sm);
+		padding: rem(20px, $text-bp-sm) rem(25px, $text-bp-sm);
+		border-radius: rem(5, $text-bp-sm);
+		margin:  rem(20, $text-bp-sm) auto;
+
+		@include bp-medium {
+			margin-left: 700px;
+			// margin:  0 auto;
+			width: rem(256, $text-bp-md);
 			font-size: rem(22, $text-bp-md);
-			padding-left: 100px;		
+			padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
+			border-radius: rem(5, $text-bp-md);
+		}
+
 	}
-		.plan, .land, .building, .operations{
-			background-color: #f9f4f4;
-			
-	}
+
+		      #tanja-img {
+		      	display: flex;
+		      	justify-content: flex-start;
+		      	padding-top:50%;
+		        width: 100%;
+		        width: 322px;
+		        height: 483px;
+				}
+		
+
+			}
+	section.our-services{   
+		height: rem(700, $text-bp-md);
+		background-color: $white;
+		@include bp-medium;
+			.header{
+				color: $black;
+				font-size: rem(22, $text-bp-md);
+				padding-left: 100px;		
+		}
+			.plan, .land, .building, .operations{
+				background-color: #f9f4f4;
+				
+		}
+	}	
 }
+
+
 
 
 

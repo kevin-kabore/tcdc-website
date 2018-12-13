@@ -1,7 +1,7 @@
 .section {
 	max-width: 1440px;
 	margin: 0 auto;
-	font-family: Muli;
+	font-family: 'Muli', sans-serif;
 	padding: rem(20, $text-bp-sm);
 	overflow: hidden;
 	@include bp-medium {
@@ -13,17 +13,43 @@
 	}
 }
 
-.section.hero {
-	
+section.hero {
+	background-color: $plum;
+	font-size: rem(46, $text-bp-sm); 
+	color: #fff;
+	@include bp-medium {
+		height: auto;		
+		font-size: rem(46, $text-bp-md);
+	}
+	.preheader, .header, .subheader {
+		margin-top: 0;
+		margin-bottom: 0;
 
+		padding:  rem(20, $text-bp-sm) rem(50, $text-bp-sm);
+		@include bp-medium {
+			padding-top:  rem(50, $text-bp-md);
+			padding-left:  rem(136, $text-bp-md);	
+		}
+		@include bp-large {
+			padding-top:  rem(50, $text-bp-lg);
+			padding-left:  rem(136, $text-bp-lg);	
+		}
+	}
+	.header {
+		font-weight: bold;  
+	}
+	.subheader {
+		padding-top: 0;
+		font-weight: 200;
+	}
 }
+
 
 .line {
 	height: 2px;
 	background-color: #e7d7d6;
 	margin: 0 auto;
 	@include bp-medium {
-		// flex-direction: row;
 		margin-left: rem(75, $text-bp-md); 
 		margin-right: rem(75, $text-bp-md); 
 	}
@@ -47,6 +73,7 @@
 .btn.lg.red {
 	cursor: pointer;
 	text-align: center;
+	text-decoration: none;
 	background-color: $brick;
 	color: $white;
 
