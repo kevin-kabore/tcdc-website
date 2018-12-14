@@ -18,8 +18,13 @@
 	font-size: rem(46, $text-bp-sm); 
 	color: #fff;
 	@include bp-medium {
+		padding-top: 0; 
+
 		height: auto;		
 		font-size: rem(46, $text-bp-md);
+	}
+	@include bp-large {
+		font-size: rem(46, $text-bp-lg);	
 	}
 	.preheader, .header, .subheader {
 		margin-top: 0;
@@ -35,6 +40,9 @@
 			padding-left:  rem(136, $text-bp-lg);	
 		}
 	}
+	.preheader {
+		font-weight: 200;
+	}
 	.header {
 		font-weight: bold;  
 	}
@@ -44,7 +52,46 @@
 	}
 }
 
+.section.report {
+	text-align: center;
 
+	@include bp-medium {
+		padding-top: 0;
+	}
+	.header {
+
+		font-size: rem(46, $text-bp-sm);
+		margin-bottom: rem(50, $text-bp-sm);
+		@include bp-medium {
+			font-size: rem(46, $text-bp-md);
+			margin-bottom: rem(50, $text-bp-md);
+		}
+		@include bp-large {
+			font-size: rem(46, $text-bp-lg);
+			margin-bottom: rem(50, $text-bp-lg)
+		}
+
+		a {
+			text-decoration: none;
+			color: $black;
+		}
+		a:hover, a:active {
+			color: $brick;
+		} 
+	}
+	.row.percentage {
+		.box.brick {
+			@include bp-medium {
+				flex-basis: 50%;
+			}
+		}
+		.box.plum {
+			@include bp-medium {
+				flex-basis: 50%;
+			}
+		}
+	}
+}
 .line {
 	height: 2px;
 	background-color: #e7d7d6;

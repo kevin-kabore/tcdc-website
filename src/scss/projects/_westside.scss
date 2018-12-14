@@ -30,9 +30,9 @@
 				#westside-img-1 {
 					width: 100%;
 					@include bp-medium {
-						z-index: 1;
+						z-index: 2;
 						
-						width: rem(816, $text-bp-md);
+						width: rem(665, $text-bp-md);
 						margin-right: rem(50, $text-bp-md);
 					}
 					@include bp-large {
@@ -59,16 +59,86 @@
 			width: 100%;
 			@include bp-medium {
 				position: relative;
+				z-index: 1;
 
-
-				left: rem(720, $text-bp-md);
-				width: rem(701, $text-bp-md);
+				left: rem(570, $text-bp-md);
+				width: rem(551, $text-bp-md);
 				bottom: rem(100, $text-bp-md);
 			}
 			@include bp-large {
 				width: rem(701, $text-bp-lg);
 				left: rem(720, $text-bp-lg);
 				bottom: rem(100, $text-bp-lg);
+			}
+		}
+		.row {
+			@include bp-medium {
+				align-items: flex-start;
+
+				height: rem(370, $text-bp-md);
+			}
+			@include bp-large {
+				height: rem(510, $text-bp-lg);	
+			}
+			.box {
+				@include bp-medium {
+					z-index: 2;
+				}
+			}
+			#westside-img-3 {
+				width: 100%;
+				@include bp-medium {
+					position: relative;
+
+					// bottom: rem(570, $text-bp-md);
+					width: rem(939, $text-bp-md);
+					bottom: rem(175, $text-bp-md);
+					right: rem(110, $text-bp-md);
+				}
+				@include bp-large {
+					width: rem(1089, $text-bp-lg);
+					bottom: rem(175, $text-bp-lg);
+					right: rem(121, $text-bp-lg);
+				}		
+			}
+		}
+	}
+
+	.section-row.bottom {
+
+		@include bp-medium {
+			margin-top: rem(92, $text-bp-md);
+		}
+		@include bp-large {
+			margin-top: rem(92, $text-bp-lg);
+		}
+		.copy-ctn {
+			text-align: center;
+
+			font-size: rem(22, $text-bp-sm);
+			margin-top: rem(50, $text-bp-sm);
+			@include bp-medium {
+				font-size: rem(22, $text-bp-md);
+				margin-top: rem(50, $text-bp-md);
+			}
+			@include bp-large {
+				font-size: rem(22, $text-bp-lg);
+				margin-top: rem(50, $text-bp-lg);
+			}
+		}
+	}
+
+	.section.report {
+		.row.percentage {
+			.box.brick {
+			@include bp-medium {
+				flex-basis: 75%;
+				}
+			}
+			.box.plum {
+				@include bp-medium {
+					flex-basis: 25%;
+				}
 			}
 		}
 	}
