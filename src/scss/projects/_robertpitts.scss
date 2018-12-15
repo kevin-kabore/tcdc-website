@@ -1,0 +1,90 @@
+#robert-pitts {
+  .section.main {
+    .section-row.top {
+      .row {
+        @include bp-medium {
+          align-items: flex-start;
+
+          margin-bottom: rem(-40, $text-bp-md);
+        }
+        @include bp-large {
+          margin-bottom: rem(-40, $text-bp-lg);
+        }
+        #robert-pitts-img-1 {
+          width: 100%;
+          z-index: 3;
+          @include bp-medium {
+            width: rem(562, $text-bp-md);
+          }
+          @include bp-large {
+            width: rem(685, $text-bp-lg);
+          }
+        }
+        .box {
+          @include bp-medium {
+            margin-top: rem(25, $text-bp-md);
+          }
+          @include bp-large {
+            margin-top: rem(25, $text-bp-lg);
+          }
+        }
+      }
+    }
+    .section-row.middle {
+      #robert-pitts-img-2 {
+        @include bp-medium {
+          z-index: 2;
+          margin-left: auto;
+          position: relative;
+
+          padding-top: rem(75, $text-bp-md);
+          width: rem(503, $text-bp-md);
+          bottom: rem(112, $text-bp-md);
+        }
+        @include bp-large {
+          padding-top: rem(75, $text-bp-lg);
+          width: rem(613, $text-bp-lg);
+          bottom: rem(112, $text-bp-lg);
+        }
+      }
+      .row {
+        @include bp-medium {
+          align-items: flex-start;
+          position: relative;
+
+          bottom: rem(175, $text-bp-md);
+        }
+        @include bp-large {
+          bottom: rem(175, $text-bp-lg);
+        }
+      }
+      #robert-pitts-img-3 {
+        @include bp-medium {
+          width: rem(634, $text-bp-md);
+        }
+        @include bp-large {
+          width: rem(775, $text-bp-lg);
+        }
+      }
+    }
+    .section-row.bottom {
+      .img-container {
+        margin: 0 auto;
+
+        width: rem(227, $text-bp-sm);
+        @include bp-medium {
+          width: rem(227, $text-bp-md);
+        }
+        @include bp-large {
+          width: rem(227, $text-bp-lg);
+        }
+      }
+    }
+  }
+
+  .section.report {
+    .box.brick {
+      flex-basis: 100%;
+    }
+  }
+}

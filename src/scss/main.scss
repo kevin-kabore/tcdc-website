@@ -1,33 +1,30 @@
 /**
- * Import SASS 
+ * Import SASS
  * Combining files into one, adds them in sequence
  */
 
-@import "variables";
-@import "mixins";
-@import "imports";
-@import "keyframes";
+@import 'variables';
+@import 'mixins';
+@import 'imports';
+@import 'keyframes';
 
-@import "global";
-
+@import 'global';
 
 /*
 * Components
 */
-@import "common";
-@import "navbar";
-
+@import 'common';
+@import 'navbar';
 
 /*
 * Pages
 */
 
 // Home
-@import "home";
-
-
+@import 'home';
 
 // Projects
-@import "projects/projects";
-@import "projects/westside";
-
+@import 'projects/projects';
+@import 'projects/westside';
+@import 'projects/alicegriffith';
+@import 'projects/robertpitts';

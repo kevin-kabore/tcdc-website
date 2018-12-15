@@ -1,210 +1,259 @@
 .section {
-	max-width: 1440px;
-	margin: 0 auto;
-	font-family: 'Muli', sans-serif;
-	padding: rem(20, $text-bp-sm);
-	overflow: hidden;
-	@include bp-medium {
-		padding: rem(75, $text-bp-md) rem(60, $text-bp-md);
-	}
-	@include bp-large {
-		padding: rem(75, $text-bp-lg) rem(60, $text-bp-lg);
-		margin: 0 auto;
-	}
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Muli', sans-serif;
+  padding: rem(20, $text-bp-sm);
+  overflow: hidden;
+  @include bp-medium {
+    padding: rem(75, $text-bp-md) rem(60, $text-bp-md);
+  }
+  @include bp-large {
+    padding: rem(75, $text-bp-lg) rem(60, $text-bp-lg);
+    margin: 0 auto;
+  }
 }
 
 .section.hero {
-	background-color: $plum;
-	font-size: rem(46, $text-bp-sm); 
-	color: #fff;
-	@include bp-medium {
-		padding-top: 0; 
+  background-color: $plum;
+  font-size: rem(46, $text-bp-sm);
+  color: #fff;
+  @include bp-medium {
+    padding-top: 0;
 
-		height: auto;		
-		font-size: rem(46, $text-bp-md);
-	}
-	@include bp-large {
-		font-size: rem(46, $text-bp-lg);	
-	}
-	.preheader, .header, .subheader {
-		margin-top: 0;
-		margin-bottom: 0;
+    height: auto;
+    font-size: rem(46, $text-bp-md);
+  }
+  @include bp-large {
+    font-size: rem(46, $text-bp-lg);
+  }
+  .preheader,
+  .header,
+  .subheader {
+    margin-top: 0;
+    margin-bottom: 0;
 
-		padding:  rem(20, $text-bp-sm) rem(50, $text-bp-sm);
-		@include bp-medium {
-			padding-top:  rem(50, $text-bp-md);
-			padding-left:  rem(136, $text-bp-md);	
-		}
-		@include bp-large {
-			padding-top:  rem(50, $text-bp-lg);
-			padding-left:  rem(136, $text-bp-lg);	
-		}
-	}
-	.preheader {
-		font-weight: 200;
-	}
-	.header {
-		font-weight: bold;  
-	}
-	.subheader {
-		padding-top: 0;
-		font-weight: 200;
-	}
+    padding: rem(20, $text-bp-sm) rem(50, $text-bp-sm);
+    @include bp-medium {
+      padding-top: rem(50, $text-bp-md);
+      padding-left: rem(136, $text-bp-md);
+    }
+    @include bp-large {
+      padding-top: rem(50, $text-bp-lg);
+      padding-left: rem(136, $text-bp-lg);
+    }
+  }
+  .preheader {
+    font-weight: 200;
+  }
+  .header {
+    font-weight: bold;
+  }
+  .subheader {
+    padding-top: 0;
+    font-weight: 200;
+  }
+}
+
+#westside,
+#alice-griffith,
+#robert-pitts {
+  .section.main {
+    .section-row:nth-child(even) {
+      background-color: #f9f4f4;
+    }
+    .section-row.top {
+      .description {
+        margin: 0 auto;
+        font-size: rem(22, $text-bp-sm);
+        margin-bottom: rem(50, $text-bp-sm);
+        @include bp-medium {
+          width: 90%;
+          font-size: rem(22, $text-bp-md);
+          margin-bottom: rem(50, $text-bp-md);
+        }
+        @include bp-large {
+          width: 82%;
+          font-size: rem(22, $text-bp-lg);
+          margin-bottom: rem(50, $text-bp-lg);
+        }
+      }
+    }
+    .section-row.bottom {
+      @include bp-medium {
+        margin-top: rem(92, $text-bp-md);
+      }
+      @include bp-large {
+        margin-top: rem(92, $text-bp-lg);
+      }
+      .copy-ctn {
+        text-align: center;
+
+        font-size: rem(22, $text-bp-sm);
+        margin-top: rem(50, $text-bp-sm);
+        @include bp-medium {
+          font-size: rem(22, $text-bp-md);
+          margin-top: rem(50, $text-bp-md);
+        }
+        @include bp-large {
+          font-size: rem(22, $text-bp-lg);
+          margin-top: rem(50, $text-bp-lg);
+        }
+      }
+    }
+  }
 }
 
 .section.report {
-	text-align: center;
+  text-align: center;
 
-	@include bp-medium {
-		padding-top: 0;
-	}
-	.header {
+  @include bp-medium {
+    padding-top: 0;
+  }
+  .header {
+    font-size: rem(46, $text-bp-sm);
+    margin-bottom: rem(50, $text-bp-sm);
+    @include bp-medium {
+      font-size: rem(46, $text-bp-md);
+      margin-bottom: rem(50, $text-bp-md);
+    }
+    @include bp-large {
+      font-size: rem(46, $text-bp-lg);
+      margin-bottom: rem(50, $text-bp-lg);
+    }
 
-		font-size: rem(46, $text-bp-sm);
-		margin-bottom: rem(50, $text-bp-sm);
-		@include bp-medium {
-			font-size: rem(46, $text-bp-md);
-			margin-bottom: rem(50, $text-bp-md);
-		}
-		@include bp-large {
-			font-size: rem(46, $text-bp-lg);
-			margin-bottom: rem(50, $text-bp-lg)
-		}
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+    a:hover,
+    a:active {
+      color: $brick;
+    }
+  }
+  .row.percentage {
+    flex-direction: row;
 
-		a {
-			text-decoration: none;
-			color: $black;
-		}
-		a:hover, a:active {
-			color: $brick;
-		} 
-	}
-	.row.percentage {
-		.box.brick {
-			@include bp-medium {
-				flex-basis: 50%;
-			}
-		}
-		.box.plum {
-			@include bp-medium {
-				flex-basis: 50%;
-			}
-		}
-	}
+    .box.brick {
+      flex-basis: 50%;
+    }
+    .box.plum {
+      flex-basis: 50%;
+    }
+  }
 }
 .line {
-	height: 2px;
-	background-color: #e7d7d6;
-	margin: 0 auto;
-	@include bp-medium {
-		margin-left: rem(75, $text-bp-md); 
-		margin-right: rem(75, $text-bp-md); 
-	}
-	@include bp-large {
-		margin-left: rem(75, $text-bp-lg); 
-		margin-right: rem(75, $text-bp-lg); 	
-	}
+  height: 2px;
+  background-color: #e7d7d6;
+  margin: 0 auto;
+  @include bp-medium {
+    margin-left: rem(75, $text-bp-md);
+    margin-right: rem(75, $text-bp-md);
+  }
+  @include bp-large {
+    margin-left: rem(75, $text-bp-lg);
+    margin-right: rem(75, $text-bp-lg);
+  }
 }
 
 .row {
-	display: flex;
-	
-	flex-direction: column;
-	@include bp-medium {
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: flex-end;
-	}
+  display: flex;
+
+  flex-direction: column;
+  @include bp-medium {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
 }
 
 .btn.lg.red {
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	background-color: $brick;
-	color: $white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  background-color: $brick;
+  color: $white;
 
-	width: rem(256, $text-bp-sm);
-	font-size: rem(22, $text-bp-sm);
-	padding: rem(20px, $text-bp-sm) rem(25px, $text-bp-sm);
-	border-radius: rem(5, $text-bp-sm);
-	margin:  rem(20, $text-bp-sm) auto;
-	@include bp-medium {
-		margin:  0 auto;
+  width: rem(256, $text-bp-sm);
+  font-size: rem(22, $text-bp-sm);
+  padding: rem(20px, $text-bp-sm) rem(25px, $text-bp-sm);
+  border-radius: rem(5, $text-bp-sm);
+  margin: rem(20, $text-bp-sm) auto;
+  @include bp-medium {
+    margin: 0 auto;
 
-		width: rem(256, $text-bp-md);
-		font-size: rem(22, $text-bp-md);
-		padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
-		border-radius: rem(5, $text-bp-md);
-	}
-	@include bp-large {
-		width: rem(256, $text-bp-lg);
-		font-size: rem(22, $text-bp-lg);
-		padding: rem(25px, $text-bp-lg) rem(25px, $text-bp-lg);
-		border-radius: rem(5, $text-bp-lg);
-	}
-	&:hover, &:active {
-		color: $brick;
-		background-color: $white;
-		border: 1px solid $brick;
-	}
+    width: rem(256, $text-bp-md);
+    font-size: rem(22, $text-bp-md);
+    padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
+    border-radius: rem(5, $text-bp-md);
+  }
+  @include bp-large {
+    width: rem(256, $text-bp-lg);
+    font-size: rem(22, $text-bp-lg);
+    padding: rem(25px, $text-bp-lg) rem(25px, $text-bp-lg);
+    border-radius: rem(5, $text-bp-lg);
+  }
+  &:hover,
+  &:active {
+    color: $brick;
+    background-color: $white;
+    border: 1px solid $brick;
+  }
 }
-
 
 .box {
-	color: #fff;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-	min-width: rem(300, $text-bp-sm);
-	min-height: rem(300, $text-bp-sm);
-	@include bp-medium {
-		min-width: rem(250, $text-bp-md);
-		min-height: rem(250, $text-bp-md);
-	}
-	@include bp-large {
-		min-width: rem(250, $text-bp-lg);
-		min-height: rem(250, $text-bp-lg);
-	}
-	p {
-		margin: 0;
-		@include bp-medium {
-			padding: 0 rem(25, $text-bp-md);
-		}
-		@include bp-large {
-			padding: 0 rem(25, $text-bp-lg);
-		}
-	}
-	.header {
-		font-size: rem(60, $text-bp-sm);
-		@include bp-medium {
-			font-size: rem(60, $text-bp-md);
-		}
-		@include bp-large {
-			font-size: rem(60, $text-bp-lg);
-		}	
-	}
-	.subheader {
-		font-weight: 100;
+  min-width: rem(300, $text-bp-sm);
+  min-height: rem(300, $text-bp-sm);
+  @include bp-medium {
+    min-width: rem(250, $text-bp-md);
+    min-height: rem(250, $text-bp-md);
+  }
+  @include bp-large {
+    min-width: rem(250, $text-bp-lg);
+    min-height: rem(250, $text-bp-lg);
+  }
+  p {
+    margin: 0;
+    @include bp-medium {
+      padding: 0 rem(25, $text-bp-md);
+    }
+    @include bp-large {
+      padding: 0 rem(25, $text-bp-lg);
+    }
+  }
+  .header {
+    font-size: rem(60, $text-bp-sm);
+    @include bp-medium {
+      font-size: rem(60, $text-bp-md);
+    }
+    @include bp-large {
+      font-size: rem(60, $text-bp-lg);
+    }
+  }
+  .subheader {
+    font-weight: 100;
 
-		font-size: rem(40, $text-bp-sm);
-		@include bp-medium {
-			font-size: rem(40, $text-bp-md);
-		}
-		@include bp-large {
-			font-size: rem(40, $text-bp-lg);
-		}
-	}
+    font-size: rem(40, $text-bp-sm);
+    @include bp-medium {
+      font-size: rem(40, $text-bp-md);
+    }
+    @include bp-large {
+      font-size: rem(40, $text-bp-lg);
+    }
+  }
 }
 .box.brick {
-	background-color: $brick;
+  background-color: $brick;
 }
 .box.plum {
-	background-color: $plum;
+  background-color: $plum;
 }
 .box.green {
-	background-color: #00b241;
+  background-color: #00b241;
 }

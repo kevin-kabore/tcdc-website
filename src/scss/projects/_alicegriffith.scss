@@ -1,0 +1,92 @@
+#alice-griffith {
+  .section.main {
+    .section-row.top {
+      .row {
+        @include bp-medium {
+          justify-content: center;
+          align-items: flex-start;
+
+          margin-bottom: rem(-40, $text-bp-md);
+        }
+        @include bp-large {
+          margin-bottom: rem(-40, $text-bp-lg);
+        }
+        #alice-griffith-img-1 {
+          width: 100%;
+          @include bp-medium {
+            z-index: 2;
+
+            width: rem(628, $text-bp-md);
+          }
+          @include bp-large {
+            width: rem(772, $text-bp-lg);
+          }
+        }
+        .box {
+          @include bp-medium {
+            z-index: 3;
+            position: relative;
+
+            right: rem(75, $text-bp-md);
+            margin-top: rem(75, $text-bp-md);
+          }
+          @include bp-large {
+            right: rem(75, $text-bp-lg);
+            margin-top: rem(75, $text-bp-lg);
+          }
+        }
+      }
+    }
+    .section-row.middle {
+      #alice-griffith-img-2 {
+        @include bp-medium {
+          padding-top: rem(75, $text-bp-md);
+          width: rem(672, $text-bp-md);
+        }
+        @include bp-large {
+          padding-top: rem(75, $text-bp-lg);
+          width: rem(820, $text-bp-lg);
+        }
+      }
+      .row {
+        @include bp-medium {
+          align-items: flex-start;
+
+          margin-top: rem(-55, $text-bp-md);
+          padding-bottom: rem(100, $text-bp-md);
+        }
+        @include bp-large {
+          margin-top: rem(-55, $text-bp-lg);
+          padding-bottom: rem(100, $text-bp-lg);
+        }
+      }
+      #alice-griffith-img-3 {
+        @include bp-medium {
+          width: rem(725, $text-bp-md);
+        }
+        @include bp-large {
+          width: rem(884, $text-bp-lg);
+        }
+      }
+    }
+    .section-row.bottom {
+      .img-container {
+        margin: 0 auto;
+
+        width: rem(227, $text-bp-sm);
+        @include bp-medium {
+          width: rem(227, $text-bp-md);
+        }
+        @include bp-large {
+          width: rem(227, $text-bp-lg);
+        }
+      }
+    }
+  }
+
+  .section.report {
+    .box.brick {
+      flex-basis: 100%;
+    }
+  }
+}
