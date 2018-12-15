@@ -15,27 +15,28 @@
 		}
 		.header {
 			font-weight: bold;  
-		}
-
+		}  
 		.section-inner {
 			@include bp-medium{
 				display: flex;
-	    		justify-content: flex-end;
+	    	justify-content: flex-end;
 			}
+			//fix positioning
 			#house-img {
-					width: 100%;
-				    width: 384px;
-	    			height: 174.5px;
-	    			padding-top: 100px;
-					@include bp-medium {
-						width: rem(768, $text-bp-md);
-					@include bp-large {
-						width: rem(768, $text-bp-lg);
-						}
+				position:absolute;
+				width: 100%;
+				width: 384px;
+	    		height: 174.5px;
+	    		padding-top: 100px;
+				@include bp-medium {
+					width: rem(768, $text-bp-md);
+				@include bp-large {
+					width: rem(768, $text-bp-lg);
 					}
 				}
-	        }
-	    }
+			}
+	  }
+	}
 	// adjust for large and small screens?
 	section.sub-hero {  
 		@include bp-medium {
@@ -43,37 +44,96 @@
 			font-size: rem(32px);
 			font-weight: 400;
 			height: 1150px;
-		}
+			}
 		.header{
 		@include bp-medium{
-				padding-left:230px;
-				font-size: 45px;
-				position: absolute;
-				padding-top:270px;
-
+			padding-left:230px;
+			font-size: 45px;
+			position: absolute;
+			padding-top:270px;
 			}
 		}
 		.body-text{
 			position: absolute;
-	    	padding-left: 700px;
-	    	padding-top: 580px;
-		}
-	// Move text in button to middle of button
-		// .btn-lg-red{
-		// 	@include bp-medium;
-		// 	display:block;
-		// 	height:88px;
-		// 	width:260px;
-		// 	margin-left:700px;
-		// 	background-color: $plum;
-		// 	display:flex;
-		// 	align-content:center;
-		// 	justify-content:center;
-		// 	color: $white;
-		// 	font-size: rem(22, $text-bp-md);
+	    padding-left: 700px;
+	    padding-top: 580px;
+			}
+		.btn-lg-red {
+			cursor: pointer;
+			text-align: center;
+			background-color: $brick;
+			color: $white;
+			width: rem(256, $text-bp-sm);
+			font-size: rem(22, $text-bp-sm);
+			padding: rem(20px, $text-bp-sm) rem(25px, $text-bp-sm);
+			border-radius: rem(5, $text-bp-sm);
+			margin:  rem(20, $text-bp-sm) auto;
 
-		// 	}
-	.btn-lg-red {
+			@include bp-medium {
+				margin-left: 700px;
+				// margin:  0 auto;
+				width: rem(256, $text-bp-md);
+				font-size: rem(22, $text-bp-md);
+				padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
+				border-radius: rem(5, $text-bp-md);
+				}
+			}
+			#tanja-img {
+		      	display: flex;
+		      	justify-content: flex-start;
+		      	padding-top:50%;
+		        width: 100%;
+		        width: 322px;
+		        height: 483px;
+						}
+					}
+		
+	section.our-services{   
+		background-color: #f9f4f4;;
+			@include bp-medium;
+	}
+		.header-services {
+			margin-left: 130px;
+			padding-bottom: 65px;
+			font-size: 20px;
+		}
+		// Make space in between columns thinner? change color of border
+		// should be 2px
+		.container{
+			width: 100%;
+		}
+		// Move numbers to the left and thin out font. Move text down.
+		.item{
+			color: $white;
+			text-align: center;
+			font-size: 16px;
+			height: 300px;
+			float: left;
+			width: 21%;
+			padding: 1%;
+			margin: 0 1%;
+			background:#2c2424;
+			}
+		section.history{
+
+		}
+		.body-text2{
+			position:absolute;
+			height: 600px;
+			font-size: 25px;
+			padding-top: 100px;
+		}
+		.bold{
+			font-weight: bold; 
+		}
+				#chris-img {
+					padding-left:53%;
+					width:100%;
+					width:486px;
+					height:614px;
+				}
+	// Move button down
+		.btn-lg-red1{
 		cursor: pointer;
 		text-align: center;
 		background-color: $brick;
@@ -85,41 +145,18 @@
 		margin:  rem(20, $text-bp-sm) auto;
 
 		@include bp-medium {
-			margin-left: 700px;
+			padding-top: 300px;
 			// margin:  0 auto;
 			width: rem(256, $text-bp-md);
 			font-size: rem(22, $text-bp-md);
 			padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
 			border-radius: rem(5, $text-bp-md);
-		}
-
+				}
+			}
+	section.recent-projects{
+		background-color: $white;
 	}
 
-		      #tanja-img {
-		      	display: flex;
-		      	justify-content: flex-start;
-		      	padding-top:50%;
-		        width: 100%;
-		        width: 322px;
-		        height: 483px;
-				}
-		
-
-			}
-	section.our-services{   
-		height: rem(700, $text-bp-md);
-		background-color: $white;
-		@include bp-medium;
-			.header{
-				color: $black;
-				font-size: rem(22, $text-bp-md);
-				padding-left: 100px;		
-		}
-			.plan, .land, .building, .operations{
-				background-color: #f9f4f4;
-				
-		}
-	}	
 }
 
 
