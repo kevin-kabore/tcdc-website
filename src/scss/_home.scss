@@ -47,7 +47,7 @@
 			}
 		.header{
 		@include bp-medium{
-			padding-left:230px;
+			padding-left:130px;
 			font-size: 45px;
 			position: absolute;
 			padding-top:270px;
@@ -115,7 +115,7 @@
 			background:#2c2424;
 			}
 		section.history{
-
+			background: #f9f4f4;
 		}
 		.body-text2{
 			position:absolute;
@@ -155,9 +155,89 @@
 			}
 	section.recent-projects{
 		background-color: $white;
+		height: 2000px;
+		
+		.header {
+			position: absolute;
+			// padding-top:70px;
+			padding-left: 100px;
+			font-size: 40px;
+		}
+				#rob-apt-img{
+				display: flex;
+				justify-content: flex-end;
+				padding-bottom: 400px;
+				padding-left: 450px;
+				width: 100%;
+				width: 572px;
+				height: 414px;
+			}
+			//move text up and align with image
+		.rob{
+			position: absolute;
+			padding-top: 380px;
+			padding-left: 100px;
+			font-size: 18px;
+		}
+		.westside-text{
+			position: absolute;
+			padding-top: 320px;
+			padding-left: 800px;
+			font-size: 18px;
+		}
+			#westside-courts-img{
+				width: 100%;
+				width: 684px;
+				height: 478px;
+			}
+		.tabernacle-text{
+			position: absolute;
+			padding-top: 415px;
+			font-size:18px;
+			}
+			#tabernacle-img{
+				padding-top: 100px;
+				width:100%;
+				width:572px ;
+				height:314px;
+				padding-left: 450px;
+			}
+		}
 	}
 
-}
+	section.meet-team{
+
+	}
+
+	.row{
+		padding-bottom: 100px;
+	}
+
+		.team-btn{
+		display: flex;
+		justify-content: center;
+		cursor: pointer;
+		text-align: center;
+		background-color: $brick;
+		color: $white;
+		width: rem(256, $text-bp-sm);
+		font-size: rem(22, $text-bp-sm);
+		padding: rem(20px, $text-bp-sm) rem(25px, $text-bp-sm);
+		border-radius: rem(5, $text-bp-sm);
+		margin:  rem(20, $text-bp-sm) auto;
+
+		@include bp-medium {
+			padding-top: 300px;
+			// margin:  0 auto;
+			width: rem(256, $text-bp-md);
+			font-size: rem(22, $text-bp-md);
+			padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
+			border-radius: rem(5, $text-bp-md);
+				}
+			}
+
+
+
 
 
 
