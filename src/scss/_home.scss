@@ -44,27 +44,27 @@
 			font-size: rem(32px);
 			font-weight: 400;
 			height: 1150px;
-			}
+		}
 		.header{
-		@include bp-medium{
-			padding-left:130px;
-			font-size: 45px;
-			position: absolute;
-			padding-top:20px;
-			}
-		@include bp-large{
-			padding-left: 250px;
-			padding-top: 160px;
-			}
+			@include bp-medium{
+				padding-left:130px;
+				font-size: 45px;
+				position: absolute;
+				padding-top:20px;
+				}
+			@include bp-large{
+				padding-left: 250px;
+				padding-top: 160px;
+				}
 		}
 		.body-text{
 			position: absolute;
-	    padding-left: 700px;
-	    padding-top: 580px;
-	    @include bp-large{
-	    padding-left: 900px;
-	    padding-top: 600px;
-	    }
+		    padding-left: 700px;
+		    padding-top: 580px;
+		    @include bp-large{
+		    	padding-left: 900px;
+		    	padding-top: 600px;
+	    	}
 		}
 		.btn-lg-red {
 			cursor: pointer;
@@ -79,7 +79,6 @@
 
 			@include bp-medium {
 				margin-left: 700px;
-				// margin:  0 auto;
 				width: rem(256, $text-bp-md);
 				font-size: rem(22, $text-bp-md);
 				padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
@@ -97,17 +96,14 @@
 		        width: 100%;
 		        width: 322px;
 		        height: 483px;
-						
-						@include bp-large{
-							padding-top: 38%;
-						}
-					}
+				@include bp-large{
+					padding-top: 38%;
 				}
+			}
+	}
 		
 	section.our-services{   
-		background-color: #f9f4f4;;
-			@include bp-medium;
-	}
+		background-color: #f9f4f4;
 		.header-services {
 			margin-left: 130px;
 			padding-bottom: 65px;
@@ -117,42 +113,44 @@
 		// should be 2px
 		.container{
 			width: 100%;
-		}
-		// Move numbers to the left and thin out font. Move text down.
-		.item{
-			color: $white;
-			text-align: center;
-			font-size: 16px;
-			height: 300px;
-			float: left;
-			width: 21%;
-			padding: 1%;
-			margin: 0 1%;
-			background:#2c2424;
+			// Move numbers to the left and thin out font. Move text down.
+			.item{
+				color: $white;
+				text-align: center;
+				font-size: 16px;
+				height: 300px;
+				float: left;
+				width: 21%;
+				padding: 1%;
+				margin: 0 1%;
+				background:#2c2424;
 			}
-		section.history{
-			background: #f9f4f4;
 		}
-		.body-text2{
+	}	
+	section.history {
+		background: #f9f4f4;
+		.body-text2 {
 			position:absolute;
 			height: 600px;
 			font-size: 25px;
 			padding-top: 100px;
 		}
-		.bold{
-			font-weight: bold; 
+		#chris-img {
+			padding-left:53%;
+			width:100%;
+			width:486px;
+			height:614px;
+			@include bp-large{
+				padding-left: 58%;
+			}
 		}
-				#chris-img {
-					padding-left:53%;
-					width:100%;
-					width:486px;
-					height:614px;
-					@include bp-large{
-						padding-left: 58%;
-					}
-				}
+	}
+	.bold{
+		font-weight: bold; 
+	}
+			
 	// Move button down
-		.btn-lg-red1{
+	.btn-lg-red1 {
 		position: absolute;
 		padding-top: 300px; 
 		cursor: pointer;
@@ -173,32 +171,31 @@
 			font-size: rem(22, $text-bp-md);
 			padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
 			border-radius: rem(5, $text-bp-md);
-				}
-			}
+		}
+	}
 	section.recent-projects{
 		@include bp-large{
-		background-color: $white;
-		height: 2000px;
+			background-color: $white;
+			height: 2000px;
 		}
-		
 		.header {
 			position: absolute;
 			// padding-top:70px;
 			padding-left: 100px;
 			font-size: 40px;
 		}
-				#rob-apt-img{
-				display: flex;
-				justify-content: flex-end;
-				padding-bottom: 400px;
-				padding-left: 450px;
-				width: 100%;
-				width: 572px;
-				height: 414px;
-				@include bp-large{
-					padding-left: 600px;
-				}
+		#rob-apt-img{
+			display: flex;
+			justify-content: flex-end;
+			padding-bottom: 400px;
+			padding-left: 450px;
+			width: 100%;
+			width: 572px;
+			height: 414px;
+			@include bp-large{
+				padding-left: 600px;
 			}
+		}
 		.rob{
 			position: absolute;
 			padding-top: 380px;
@@ -218,71 +215,56 @@
 				padding-left: 950px;
 			}
 		}
-			#westside-courts-img{
+		#westside-courts-img{
+			width: 100%;
+			width: 684px;
+			height: 478px;
+			@include bp-large{
 				width: 100%;
-				width: 684px;
-				height: 478px;
-				@include bp-large{
-					width: 100%;
-					width: 1024px;
-					height:578px;
-				}
+				width: 1024px;
+				height:578px;
 			}
-			//needs top line to be bold
+		}
+		//needs top line to be bold
 		.tabernacle-text{
 			position: absolute;
 			padding-top: 415px;
 			font-size:18px;
-			}
-			#tabernacle-img{
-				padding-top: 100px;
-				width:100%;
-				width:572px ;
-				height:314px;
-				padding-left: 450px;
-			}
+		}
+		#tabernacle-img{
+			padding-top: 100px;
+			width:100%;
+			width:572px ;
+			height:314px;
+			padding-left: 450px;
 		}
 	}
 
 	section.meet-team{
-
-	}
-
-	.row{
-		padding-bottom: 100px;
-	}
-
+		.row{
+			padding-bottom: 100px;
+		}
 		.team-btn{
-		display: flex;
-		justify-content: center;
-		cursor: pointer;
-		text-align: center;
-		background-color: $brick;
-		color: $white;
-		width: rem(256, $text-bp-sm);
-		font-size: rem(22, $text-bp-sm);
-		padding: rem(20px, $text-bp-sm) rem(25px, $text-bp-sm);
-		border-radius: rem(5, $text-bp-sm);
-		margin:  rem(20, $text-bp-sm) auto;
+			display: flex;
+			justify-content: center;
+			cursor: pointer;
+			text-align: center;
+			background-color: $brick;
+			color: $white;
+			width: rem(256, $text-bp-sm);
+			font-size: rem(22, $text-bp-sm);
+			padding: rem(20px, $text-bp-sm) rem(25px, $text-bp-sm);
+			border-radius: rem(5, $text-bp-sm);
+			margin:  rem(20, $text-bp-sm) auto;
 
-		@include bp-medium {
-			padding-top: 300px;
-			// margin:  0 auto;
-			width: rem(256, $text-bp-md);
-			font-size: rem(22, $text-bp-md);
-			padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
-			border-radius: rem(5, $text-bp-md);
-				}
+			@include bp-medium {
+				padding-top: 300px;
+				// margin:  0 auto;
+				width: rem(256, $text-bp-md);
+				font-size: rem(22, $text-bp-md);
+				padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
+				border-radius: rem(5, $text-bp-md);
 			}
-
-
-
-
-
-
-
-
-
-
-
-
+		}
+	}
+}

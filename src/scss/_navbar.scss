@@ -13,12 +13,15 @@
 		justify-content: space-between;
 
 		flex-direction: column;
+		width: auto !important;
 		@include bp-medium {
 			flex-direction: row;
+			width: auto !important;
 			margin-left: rem(75, $text-bp-md); 
 			margin-right: rem(75, $text-bp-md); 
 		}
 		@include bp-large {
+			width: auto !important;
 			margin-left: rem(75, $text-bp-lg); 
 			margin-right: rem(75, $text-bp-lg); 	
 		}
