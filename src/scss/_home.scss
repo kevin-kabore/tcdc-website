@@ -40,7 +40,7 @@
 	// adjust for large and small screens?
 	section.sub-hero {  
 		@include bp-medium {
-			background-color: $white;
+			background-color: #f9f4f4;
 			font-size: rem(32px);
 			font-weight: 400;
 			height: 1150px;
@@ -50,14 +50,22 @@
 			padding-left:130px;
 			font-size: 45px;
 			position: absolute;
-			padding-top:270px;
+			padding-top:20px;
+			}
+		@include bp-large{
+			padding-left: 250px;
+			padding-top: 160px;
 			}
 		}
 		.body-text{
 			position: absolute;
 	    padding-left: 700px;
 	    padding-top: 580px;
-			}
+	    @include bp-large{
+	    padding-left: 900px;
+	    padding-top: 600px;
+	    }
+		}
 		.btn-lg-red {
 			cursor: pointer;
 			text-align: center;
@@ -77,16 +85,24 @@
 				padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
 				border-radius: rem(5, $text-bp-md);
 				}
+				@include bp-large{
+					margin-left: 900px;
+					margin-bottom: 300px;
+				}
 			}
 			#tanja-img {
 		      	display: flex;
 		      	justify-content: flex-start;
-		      	padding-top:50%;
+		      	padding-top:53%;
 		        width: 100%;
 		        width: 322px;
 		        height: 483px;
+						
+						@include bp-large{
+							padding-top: 38%;
 						}
 					}
+				}
 		
 	section.our-services{   
 		background-color: #f9f4f4;;
@@ -131,9 +147,14 @@
 					width:100%;
 					width:486px;
 					height:614px;
+					@include bp-large{
+						padding-left: 58%;
+					}
 				}
 	// Move button down
 		.btn-lg-red1{
+		position: absolute;
+		padding-top: 300px; 
 		cursor: pointer;
 		text-align: center;
 		background-color: $brick;
@@ -145,6 +166,7 @@
 		margin:  rem(20, $text-bp-sm) auto;
 
 		@include bp-medium {
+			position: absolute;
 			padding-top: 300px;
 			// margin:  0 auto;
 			width: rem(256, $text-bp-md);
@@ -154,8 +176,10 @@
 				}
 			}
 	section.recent-projects{
+		@include bp-large{
 		background-color: $white;
 		height: 2000px;
+		}
 		
 		.header {
 			position: absolute;
@@ -171,25 +195,40 @@
 				width: 100%;
 				width: 572px;
 				height: 414px;
+				@include bp-large{
+					padding-left: 600px;
+				}
 			}
-			//move text up and align with image
 		.rob{
 			position: absolute;
 			padding-top: 380px;
 			padding-left: 100px;
 			font-size: 18px;
+			@include bp-large{
+				padding-top: 200px;
+			}
 		}
+				//needs top line to be bold
 		.westside-text{
 			position: absolute;
 			padding-top: 320px;
 			padding-left: 800px;
 			font-size: 18px;
+			@include bp-large{
+				padding-left: 950px;
+			}
 		}
 			#westside-courts-img{
 				width: 100%;
 				width: 684px;
 				height: 478px;
+				@include bp-large{
+					width: 100%;
+					width: 1024px;
+					height:578px;
+				}
 			}
+			//needs top line to be bold
 		.tabernacle-text{
 			position: absolute;
 			padding-top: 415px;
