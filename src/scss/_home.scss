@@ -173,6 +173,7 @@
 			border-radius: rem(5, $text-bp-md);
 		}
 	}
+
 	section.recent-projects{
 		@include bp-large{
 			background-color: $white;
@@ -268,3 +269,4 @@
 		}
 	}
 }
+
