@@ -1,0 +1,87 @@
+#tabernacle-vista {
+  .section.main {
+    .section-row.top {
+      .row {
+        @include bp-medium {
+          justify-content: center;
+          align-items: flex-start;
+
+          margin-top: rem(125, $text-bp-md);
+          margin-bottom: rem(-320, $text-bp-md);
+        }
+        @include bp-large {
+          margin-top: rem(125, $text-bp-lg);
+          margin-bottom: rem(-320, $text-bp-lg);
+        }
+        #tabernacle-vista-img-1 {
+          width: 100%;
+          @include bp-medium {
+            margin-left: rem(100, $text-bp-md);
+            width: rem(881, $text-bp-md);
+          }
+          @include bp-large {
+            margin-left: rem(100, $text-bp-lg);
+            width: rem(1024, $text-bp-lg);
+          }
+        }
+        .box {
+          @include bp-medium {
+            z-index: 2;
+            position: relative;
+
+            right: rem(200, $text-bp-md);
+            bottom: rem(100, $text-bp-md);
+          }
+          @include bp-large {
+            right: rem(200, $text-bp-lg);
+            bottom: rem(100, $text-bp-lg);
+          }
+        }
+      }
+    }
+    .section-row.middle {
+      @include bp-medium {
+        height: rem(700, $text-bp-md);
+      }
+      @include bp-large {
+        height: rem(700, $text-bp-lg);
+      }
+      .row {
+        @include bp-medium {
+          height: 65%;
+          justify-content: flex-start;
+
+        }
+        @include bp-large {
+        }
+      }
+    }
+    .section-row.bottom {
+      .row {
+        .box.green {
+            @include bp-medium {
+              width: rem(400, $text-bp-md);
+            }
+          }
+      }
+      .copy-ctn {
+        .row {
+        }
+        .img-container {
+        }
+      }
+    }
+  }
+
+  .section.report {
+    @include bp-medium {
+      margin-top: rem(75, $text-bp-md);
+    }
+    @include bp-large {
+      margin-top: rem(75, $text-bp-lg);
+    }
+    .box.brick {
+      flex-basis: 100%;
+    }
+  }
+}

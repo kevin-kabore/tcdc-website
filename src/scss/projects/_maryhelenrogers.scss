@@ -14,7 +14,6 @@
         #mary-helen-img-1 {
           width: 100%;
           @include bp-medium {
-            z-index: 2;
 
             width: rem(754, $text-bp-md);
           }
@@ -24,40 +23,44 @@
         }
         .box {
           @include bp-medium {
-            z-index: 3;
+            z-index: 2;
             position: relative;
 
-            right: rem(75, $text-bp-md);
+            right: rem(40, $text-bp-md);
             margin-top: rem(20, $text-bp-md);
           }
           @include bp-large {
-            right: rem(75, $text-bp-lg);
+            right: rem(40, $text-bp-lg);
             margin-top: rem(20, $text-bp-lg);
           }
         }
       }
     }
     .section-row.middle {
+
       #mary-helen-img-2 {
         @include bp-medium {
-          padding-top: rem(75, $text-bp-md);
+          z-index: 2;
+          margin-left: auto; 
+
           width: rem(511, $text-bp-md);
+          margin-top: rem(-55, $text-bp-md); 
         }
         @include bp-large {
-          padding-top: rem(75, $text-bp-lg);
           width: rem(624, $text-bp-lg);
+          margin-top: rem(-55, $text-bp-lg);
         }
       }
       .row {
         @include bp-medium {
           align-items: flex-start;
 
-          margin-top: rem(-55, $text-bp-md);
-          padding-bottom: rem(100, $text-bp-md);
+          margin-top: rem(25, $text-bp-md);
+          padding-bottom: rem(50, $text-bp-md);
         }
         @include bp-large {
-          margin-top: rem(-55, $text-bp-lg);
-          padding-bottom: rem(100, $text-bp-lg);
+          margin-top: rem(25, $text-bp-md);
+          padding-bottom: rem(50, $text-bp-lg);
         }
       }
       #mary-helen-img-3 {
@@ -70,15 +73,33 @@
       }
     }
     .section-row.bottom {
-      .img-container {
-        margin: 0 auto;
-
-        width: rem(227, $text-bp-sm);
-        @include bp-medium {
-          width: rem(227, $text-bp-md);
+      .copy-ctn {
+        .row {
+          justify-content: center;
+          align-items: center;
         }
-        @include bp-large {
-          width: rem(227, $text-bp-lg);
+        .img-container {
+          margin: 0 10px;
+        }
+        .img-container.one {
+
+          width: rem(161, $text-bp-sm);
+          @include bp-medium {
+            width: rem(161, $text-bp-md);
+          }
+          @include bp-large {
+            width: rem(161, $text-bp-lg);
+          }
+        }
+        .img-container.two {
+
+          width: rem(166, $text-bp-sm);
+          @include bp-medium {
+            width: rem(166, $text-bp-md);
+          }
+          @include bp-large {
+            width: rem(166, $text-bp-lg);
+          }
         }
       }
     }

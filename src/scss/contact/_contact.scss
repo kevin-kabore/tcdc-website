@@ -1,0 +1,129 @@
+#contact {
+	.section.staff, .section.board, .section.not-pictured {
+		@include bp-medium {
+			padding-bottom: 0;
+		}
+		.header {
+			text-align: center;
+
+			font-size: 32px;
+			font-weight: 600;
+			@include bp-medium {
+				font-size: rem(32px, $text-bp-md);
+				margin-bottom: rem(50, $text-bp-md);
+			}
+			@include bp-medium {
+				font-size: rem(32px, $text-bp-lg);
+				margin-bottom: rem(50, $text-bp-lg);
+			}
+		}
+
+		.row {
+			@include bp-medium {
+				align-items: flex-start;
+			}
+			.copy-ctn {
+				font-size: 22px;
+				padding-top: 40px;
+				@include bp-medium {
+					font-size: rem(22px, $text-bp-md);
+					padding: rem(40px, $text-bp-md) rem(25px, $text-bp-md) 0 rem(25px, $text-bp-md);
+				}
+				@include bp-large {
+					font-size: rem(22px, $text-bp-lg);
+					padding: rem(40px, $text-bp-lg) rem(25px, $text-bp-lg) 0 rem(25px, $text-bp-lg);
+				}
+				p {
+					margin: 0 auto;
+				}
+				p.name {
+					font-weight: 800;
+				}
+			}
+		}
+	}
+
+	.section.staff {
+		.container {
+			.img-container {
+				@include bp-medium {
+					width: rem(300px, $text-bp-md);
+				}
+				@include bp-large {
+					width: rem(300px, $text-bp-lg);
+				}
+			}
+
+			.copy-ctn {
+			}
+		}
+	}
+
+	.section.board {
+		@include bp-medium {
+			width: 60%;
+			margin: 0 auto;
+		}
+
+		.row {
+			@include bp-medium {
+				margin-bottom: rem(75, $text-bp-md);
+			}
+			@include bp-large {
+				margin-bottom: rem(75, $text-bp-lg);
+			}
+			.container {
+				.img-container {
+					@include bp-medium {
+						width: rem(234, $text-bp-md);
+					}
+					@include bp-large {
+						width: rem(234, $text-bp-lg);
+					}
+				}
+				.copy-ctn {
+					padding-top: 20px;
+					@include bp-medium {
+						font-size: rem(22px, $text-bp-md);
+						padding: rem(20px, $text-bp-md) 0 0 0;
+					}
+					@include bp-large {
+						font-size: rem(22px, $text-bp-lg);
+						padding: rem(20px, $text-bp-lg) 0 0 0;
+					}
+				}
+			}
+		}
+		.row.last {
+			margin-bottom: 0;
+		}
+	}
+
+	.section.not-pictured {
+		.header {
+			margin-bottom: 0;
+		}
+		.name {
+			text-align: center;
+			font-size: 22px;
+			padding-top: 40px;
+			@include bp-medium {
+				font-size: rem(22px, $text-bp-md);
+				padding: rem(40px, $text-bp-md) rem(25px, $text-bp-md) 0 rem(25px, $text-bp-md);
+			}
+			@include bp-large {
+				font-size: rem(22px, $text-bp-lg);
+				padding: rem(40px, $text-bp-lg) rem(25px, $text-bp-lg) 0 rem(25px, $text-bp-lg);
+			}
+		}
+		.name.last {
+			@include bp-medium {
+				margin-bottom: rem(40px, $text-bp-md);
+			}
+			@include bp-large {
+				margin-bottom: rem(40px, $text-bp-lg);
+			}	
+		}
+	}
+
+}
