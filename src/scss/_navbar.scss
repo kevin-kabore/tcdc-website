@@ -51,7 +51,13 @@
 				text-decoration: none;
 				color: $white;
 				font-weight: 200;
+				// &:hover,&:active {
+				//     color: $brick;
+				//     background-color: $white;
+				//     // border: 1px solid $brick;
+			 //  	}
 			}
+
 			.donate {
 				background-color: #b8302a;
 				padding: rem(12, $text-bp-sm);

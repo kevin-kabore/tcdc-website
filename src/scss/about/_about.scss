@@ -1,0 +1,51 @@
+#about {
+	div.section {
+		@include bp-medium {
+			padding-top: 0;
+			padding-left: rem(136, $text-bp-md);
+	    }
+	    @include bp-large {
+	    	padding-left: rem(136, $text-bp-lg);
+	    }
+
+	    p.header {
+	    	font-size: 32px;
+	    	@include bp-medium {
+	    		font-size: rem(32px, $text-bp-md);
+	    	}
+	    	@include bp-large {
+	    		font-size: rem(32px, $text-bp-lg);
+	    	}
+	    }
+
+	    .copy-ctn {
+	    	font-size: 22px;
+	    	@include bp-medium {
+	    		font-size: rem(22px, $text-bp-md);
+	    	}
+	    	@include bp-large {
+	    		font-size: rem(22px, $text-bp-lg);
+	    	}	
+
+	    	ol, ul, li {
+	    		@include bp-medium {
+	    			margin-left: rem(-10, $text-bp-md);
+	    		}
+	    		@include bp-large {
+	    			margin-left: rem(-10, $text-bp-lg);
+	    		}
+	    	}
+
+	    	li, p {
+	    		margin-top: 25px;
+	    		@include bp-medium {
+	    			margin-top: rem(25px, $text-bp-md);
+	    		}
+	    		@include bp-large {
+	    			margin-top: rem(25px, $text-bp-lg);
+	    		}
+	    	}
+	    }
+	}
+
+}
