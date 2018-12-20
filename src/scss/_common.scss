@@ -63,6 +63,16 @@
     .section-row:nth-child(even) {
       background-color: #f9f4f4;
     }
+    .section-row {
+      @include bp-medium {
+        margin-left: rem(-60, $text-bp-md);
+        margin-right: rem(-60, $text-bp-md);
+      }
+      @include bp-large {
+        margin-left: rem(-60, $text-bp-lg);
+        margin-right: rem(-60, $text-bp-lg);
+      }
+    }
     .section-row.top {
       .description {
         margin: 0 auto;

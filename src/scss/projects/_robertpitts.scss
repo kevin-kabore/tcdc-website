@@ -40,11 +40,13 @@
           padding-top: rem(75, $text-bp-md);
           width: rem(503, $text-bp-md);
           bottom: rem(112, $text-bp-md);
+          margin-right: rem(50, $text-bp-md);
         }
         @include bp-large {
           padding-top: rem(75, $text-bp-lg);
           width: rem(613, $text-bp-lg);
           bottom: rem(112, $text-bp-lg);
+          margin-right: rem(50, $text-bp-lg);
         }
       }
       .row {

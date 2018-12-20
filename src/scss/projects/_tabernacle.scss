@@ -54,6 +54,14 @@
         }
         @include bp-large {
         }
+        .box {
+          @include bp-medium {
+            margin-left: rem(90, $text-bp-md);
+          }
+          @include bp-large {
+            margin-left: rem(90, $text-bp-lg);
+          }
+        }
       }
     }
     .section-row.bottom {

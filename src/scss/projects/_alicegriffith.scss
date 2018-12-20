@@ -42,10 +42,12 @@
         @include bp-medium {
           padding-top: rem(75, $text-bp-md);
           width: rem(672, $text-bp-md);
+          margin-left: rem(50, $text-bp-md);
         }
         @include bp-large {
           padding-top: rem(75, $text-bp-lg);
           width: rem(820, $text-bp-lg);
+          margin-left: rem(50, $text-bp-lg);
         }
       }
       .row {

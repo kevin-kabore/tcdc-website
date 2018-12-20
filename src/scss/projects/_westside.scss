@@ -15,10 +15,12 @@
             z-index: 2;
 
             width: rem(665, $text-bp-md);
+            margin-left: rem(50, $text-bp-md);
             margin-right: rem(50, $text-bp-md);
           }
           @include bp-large {
             width: rem(816, $text-bp-lg);
+            margin-left: rem(50, $text-bp-lg);
             margin-right: rem(50, $text-bp-lg);
           }
         }

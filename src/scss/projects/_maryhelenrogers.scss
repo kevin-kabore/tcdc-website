@@ -45,10 +45,12 @@
 
           width: rem(511, $text-bp-md);
           margin-top: rem(-55, $text-bp-md); 
+          margin-right: rem(50, $text-bp-md);
         }
         @include bp-large {
           width: rem(624, $text-bp-lg);
           margin-top: rem(-55, $text-bp-lg);
+          margin-right: rem(50, $text-bp-lg);
         }
       }
       .row {
@@ -79,7 +81,7 @@
           align-items: center;
         }
         .img-container {
-          margin: 0 10px;
+          margin: 0 40px;
         }
         .img-container.one {
 
