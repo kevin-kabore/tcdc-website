@@ -1,81 +1,90 @@
 .navbar {
-	background-color: $plum;
-	padding: rem(24px, $text-bp-sm);
-	@include bp-medium {
-		padding: rem(24px, $text-bp-md) rem(60, $text-bp-md) 0 rem(60px, $text-bp-md);
-	}
-	@include bp-large {
-		padding: rem(24px, $text-bp-lg) rem(60, $text-bp-lg) 0 rem(60px, $text-bp-lg);
-	}
-	.container {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+  background-color: $plum;
+  padding: rem(24px, $text-bp-sm);
+  @include bp-medium {
+    padding: rem(24px, $text-bp-md) rem(60, $text-bp-md) 0
+      rem(60px, $text-bp-md);
+  }
+  @include bp-large {
+    padding: rem(24px, $text-bp-lg) rem(60, $text-bp-lg) 0
+      rem(60px, $text-bp-lg);
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-		flex-direction: column;
-		width: auto !important;
-		@include bp-medium {
-			flex-direction: row;
-			width: auto !important;
-			margin-left: rem(75, $text-bp-md); 
-			margin-right: rem(75, $text-bp-md); 
-		}
-		@include bp-large {
-			width: auto !important;
-			margin-left: rem(75, $text-bp-lg); 
-			margin-right: rem(75, $text-bp-lg); 	
-		}
-		.logo-ctn {
-			display: flex;
-    		align-items: center;
-    		color: #fff;
-    		font-size: 32px;
+    flex-direction: column;
+    width: auto !important;
+    @include bp-medium {
+      flex-direction: row;
+      width: auto !important;
+      margin-left: rem(75, $text-bp-md);
+      margin-right: rem(75, $text-bp-md);
+    }
+    @include bp-large {
+      width: auto !important;
+      margin-left: rem(75, $text-bp-lg);
+      margin-right: rem(75, $text-bp-lg);
+    }
+    .logo-ctn {
+      animation-name: frombottom;
+      animation-duration: 2.3s;
+      animation-timing-function: ease-in;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      font-size: 32px;
 
-    		@include bp-medium {
-				font-size: rem(32px, $text-bp-md);    			
-    		}
-    		@include bp-large {
-				font-size: rem(32px, $text-bp-lg);   			
-    		}
-    		p {
-    			margin-left: 10px;
-    		}
-		}
-		.nav-links {
-			list-style: none;
-			padding: 0;
-			align-items: center;
-			text-align: center;
-			@include bp-medium {
-				display: flex;
-			}
-			li {
-				font-size: rem(22, $text-bp-sm);
-				@include bp-medium {
-					font-size: rem(22, $text-bp-md);
-				}
-			}
-			li:not(:last-child) {
-				@include bp-small-only {
-					margin-bottom: rem(20, $text-bp-sm);
-				}
-				@include bp-medium {
-					margin-right: rem(20, $text-bp-md);
-				}
-			}
-			a {
-				text-decoration: none;
-				color: $white;
-				font-weight: 200;
-			}
+      @include bp-medium {
+        font-size: rem(32px, $text-bp-md);
+      }
+      @include bp-large {
+        font-size: rem(32px, $text-bp-lg);
+      }
+      p {
+        margin-left: 10px;
+      }
+    }
+    .nav-links {
+      animation-name: frombottom;
+      animation-duration: 2s;
+      animation-timing-function: linear;
 
-			.donate {
-				background-color: #b8302a;
-				padding: rem(12, $text-bp-sm);
-				@include bp-medium {
-					padding: rem(12, $text-bp-md);
-				}
-			}
-		}
-	}
+      list-style: none;
+      padding: 0;
+      align-items: center;
+      text-align: center;
+      @include bp-medium {
+        display: flex;
+      }
+      li {
+        font-size: rem(22, $text-bp-sm);
+        @include bp-medium {
+          font-size: rem(22, $text-bp-md);
+        }
+      }
+      li:not(:last-child) {
+        @include bp-small-only {
+          margin-bottom: rem(20, $text-bp-sm);
+        }
+        @include bp-medium {
+          margin-right: rem(20, $text-bp-md);
+        }
+      }
+      a {
+        text-decoration: none;
+        color: $white;
+        font-weight: 200;
+      }
+
+      .donate {
+        background-color: #b8302a;
+        padding: rem(12, $text-bp-sm);
+        @include bp-medium {
+          padding: rem(12, $text-bp-md);
+        }
+      }
+    }
+  }
 }

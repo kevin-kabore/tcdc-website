@@ -29,6 +29,10 @@
   .preheader,
   .header,
   .subheader {
+    animation-name: frombottom1;
+    animation-duration: 1.5s;
+    animation-delay: 0.1s;
+    animation-timing-function: linear;
     margin-top: 0;
     margin-bottom: 0;
 
@@ -56,7 +60,7 @@
 
 #westside,
 #alice-griffith,
-#robert-pitts, 
+#robert-pitts,
 #mary-helen-rogers,
 #tabernacle-vista {
   .section.main {
@@ -154,6 +158,10 @@
   }
 }
 .line {
+  animation-name: lineanimation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  // width: 0;
   height: 2px;
   background-color: #e7d7d6;
   margin: 0 auto;
@@ -268,4 +276,70 @@
 }
 .box.green {
   background-color: #00b241;
+}
+
+// Animations
+
+@keyframes frombottom {
+  0% {
+    display: block;
+    position: relative;
+    opacity: 0;
+    top: 50px;
+  }
+  50% {
+    position: relative;
+    opacity: 0;
+    top: 20px;
+  }
+
+  75% {
+    position: relative;
+    opacity: 0.5;
+    top: 12px;
+  }
+  99% {
+    position: relative;
+    opacity: 1;
+    top: 0;
+  }
+  100% {
+    position: inherit;
+  }
+}
+@keyframes frombottom1 {
+  0% {
+    opacity: 0;
+    position: relative;
+    top: 250px;
+  }
+  50% {
+    opacity: 0;
+    position: relative;
+  }
+  90% {
+    opacity: 0;
+    position: relative;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    top: 0;
+  }
+}
+@keyframes lineanimation {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 50%;
+  }
+
+  90% {
+    width: 80%;
+  }
+  100% {
+    width: auto;
+  }
 }
