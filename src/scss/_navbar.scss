@@ -25,6 +25,22 @@
 			margin-left: rem(75, $text-bp-lg); 
 			margin-right: rem(75, $text-bp-lg); 	
 		}
+		.logo-ctn {
+			display: flex;
+    		align-items: center;
+    		color: #fff;
+    		font-size: 32px;
+
+    		@include bp-medium {
+				font-size: rem(32px, $text-bp-md);    			
+    		}
+    		@include bp-large {
+				font-size: rem(32px, $text-bp-lg);   			
+    		}
+    		p {
+    			margin-left: 10px;
+    		}
+		}
 		.nav-links {
 			list-style: none;
 			padding: 0;
@@ -51,11 +67,6 @@
 				text-decoration: none;
 				color: $white;
 				font-weight: 200;
-				// &:hover,&:active {
-				//     color: $brick;
-				//     background-color: $white;
-				//     // border: 1px solid $brick;
-			 //  	}
 			}
 
 			.donate {
