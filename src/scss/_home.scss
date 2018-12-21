@@ -19,140 +19,284 @@
 		.section-inner {
 			@include bp-medium{
 				display: flex;
-	    	justify-content: flex-end;
+	    		justify-content: flex-end;
 			}
 			//fix positioning
 			#house-img {
-				position:absolute;
+				
 				width: 100%;
-				width: 384px;
-	    		height: 174.5px;
 	    		padding-top: 100px;
 				@include bp-medium {
+					position:absolute;
 					width: rem(768, $text-bp-md);
+					padding-top: rem(165px, $text-bp-md);
+				}
 				@include bp-large {
 					width: rem(768, $text-bp-lg);
-					}
+					padding-top: rem(120px, $text-bp-lg);
 				}
 			}
 	  }
 	}
 	// adjust for large and small screens?
-	section.sub-hero {  
+	section.sub-hero { 
+		@include bp-small-only {
+			text-align: center;
+			margin-bottom: 50px;
+		} 
+		font-size: 28px;
 		@include bp-medium {
 			background-color: #f9f4f4;
-			font-size: rem(32px);
+			font-size: rem(28px, $text-bp-md);
 			font-weight: 400;
-			height: 1150px;
-			}
+		}
+		@include bp-medium {
+			font-size: rem(28px, $text-bp-lg);
+		}
+		.header-ctn {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
 		.header{
-		@include bp-medium{
-			padding-left:130px;
 			font-size: 45px;
-			position: absolute;
-			padding-top:20px;
+			margin-top:rem(20px, $text-bp-md);
+			@include bp-medium{
+				font-size: rem(45px, $text-bp-md);
+				margin-top:rem(100px, $text-bp-md);
 			}
-		@include bp-large{
-			padding-left: 250px;
-			padding-top: 160px;
+			@include bp-large{
+				font-size: rem(45px, $text-bp-lg);
+				margin-top:rem(100px, $text-bp-lg);
 			}
 		}
-		.body-text{
-			position: absolute;
-	    padding-left: 700px;
-	    padding-top: 580px;
-	    @include bp-large{
-	    padding-left: 900px;
-	    padding-top: 600px;
-	    }
-		}
-		.btn-lg-red {
-			cursor: pointer;
-			text-align: center;
-			background-color: $brick;
-			color: $white;
-			width: rem(256, $text-bp-sm);
-			font-size: rem(22, $text-bp-sm);
-			padding: rem(20px, $text-bp-sm) rem(25px, $text-bp-sm);
-			border-radius: rem(5, $text-bp-sm);
-			margin:  rem(20, $text-bp-sm) auto;
+		// .btn-lg-red {
+		// 	cursor: pointer;
+		// 	text-align: center;
+		// 	background-color: $brick;
+		// 	color: $white;
+		// 	width: rem(256, $text-bp-sm);
+		// 	font-size: rem(22, $text-bp-sm);
+		// 	padding: rem(20px, $text-bp-sm) rem(25px, $text-bp-sm);
+		// 	border-radius: rem(5, $text-bp-sm);
+		// 	margin:  rem(20, $text-bp-sm) auto;
 
+		// 	@include bp-medium {
+		// 		margin-left: 700px;
+		// 		// margin:  0 auto;
+		// 		width: rem(256, $text-bp-md);
+		// 		font-size: rem(22, $text-bp-md);
+		// 		padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
+		// 		border-radius: rem(5, $text-bp-md);
+		// 	}
+		// 	@include bp-large{
+		// 		margin-left: 900px;
+		// 		margin-bottom: 300px;
+		// 	}
+		// }
+		.row {
 			@include bp-medium {
-				margin-left: 700px;
-				// margin:  0 auto;
-				width: rem(256, $text-bp-md);
-				font-size: rem(22, $text-bp-md);
-				padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
-				border-radius: rem(5, $text-bp-md);
-				}
-				@include bp-large{
-					margin-left: 900px;
-					margin-bottom: 300px;
-				}
+				align-items: flex-start;
+				justify-content: flex-start;
+				margin-top:rem(75px, $text-bp-md);
 			}
-			#tanja-img {
-		      	display: flex;
-		      	justify-content: flex-start;
-		      	padding-top:53%;
-		        width: 100%;
-		        width: 322px;
-		        height: 483px;
-						
-						@include bp-large{
-							padding-top: 38%;
-						}
-					}
-				}
+			@include bp-large {
+				margin-top:rem(75px, $text-bp-lg);
+			}
+		}
+		#tanja-img {
+	      	// padding-top:53%;
+	        @include bp-medium{
+				width: rem(322px, $text-bp-md);
+	        	height: rem(483px, $text-bp-md);
+			}
+			@include bp-large{
+				width: rem(322px, $text-bp-lg);
+	        	height: rem(483px, $text-bp-lg);
+			}
+		}
+		.content {
+			font-size: 28px;
+			@include bp-medium {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				
+				height: rem(473px, $text-bp-md);
+				font-size: rem(28px, $text-bp-md);
+				margin-left: rem(400, $text-bp-md);
+			}
+			@include bp-large {
+				height: rem(473px, $text-bp-lg);	
+				font-size: rem(28px, $text-bp-lg);
+				margin-left: rem(500, $text-bp-lg);
+			}
+
+		}
+	}
 		
 	section.our-services{   
-		background-color: #f9f4f4;;
-			@include bp-medium;
-	
+		background-color: #f9f4f4;
 		.header-services {
-			margin-left: 130px;
-			padding-bottom: 65px;
+			margin: 0 auto;
 			font-size: 20px;
+			margin-bottom: 25px;
+			text-align: center;
+
+			@include bp-medium {
+				text-align: left;
+				margin-left: rem(120px, $text-bp-md);
+				margin-bottom: rem(75px, $text-bp-md);
+			}
+			@include bp-large {
+				text-align: left;
+				margin-left: rem(120px, $text-bp-lg);
+				margin-bottom: rem(75px, $text-bp-lg);
+			}
 		}
 		// Make space in between columns thinner? change color of border
 		// should be 2px
 		.container{
+			display: flex;
 			width: 100%;
+			flex-direction: column;
+			@include bp-medium {
+				width: 111%;
+				flex-direction: row;
+		        margin-left: rem(-60, $text-bp-md);
+		        margin-right: rem(-60, $text-bp-md);
+		      }
+		      @include bp-large {
+		      	width: 110%;
+		        margin-left: rem(-60, $text-bp-lg);
+		        margin-right: rem(-60, $text-bp-lg);
+		      }
 		}
 		// Move numbers to the left and thin out font. Move text down.
 		.item{
 			color: $white;
-			text-align: center;
-			font-size: 16px;
-			height: 300px;
-			float: left;
-			width: 21%;
-			padding: 1%;
-			margin: 0 1%;
-			background:#2c2424;
-			}
-		}
-		section.history{
-			background: #f9f4f4;
+			text-align: left;
+			border: 1px solid #d3d3d3;
 
-		.body-text2{
-			position:absolute;
-			height: 600px;
-			font-size: 25px;
-			padding-top: 100px;
-		}
-		.bold{
-			font-weight: bold; 
-		}
-				#chris-img {
-					padding-left:53%;
-					width:100%;
-					width:486px;
-					height:614px;
-					@include bp-large{
-						padding-left: 58%;
-					}
-				}
+			height: 480px;
+			font-size: 18px;
+			@include bp-medium {
+				flex-basis: 25%;
+
+				height: rem(480px, $text-bp-md);
+				font-size: rem(18px, $text-bp-md);
 			}
+			@include bp-large {
+				height: rem(480px, $text-bp-lg);
+				font-size: rem(18px, $text-bp-lg);
+			}
+			.numb {
+				color: rgba(255, 255, 255, 0.6);
+			}
+			.ctn {
+				width: 100%;
+				height: 100%;
+				background:#2c2424;
+			}
+			p {
+				margin: 0;
+				padding: 15%;
+			};
+		}
+		@keyframes bg {
+			from {
+				background-color: #2c2424;
+			}
+			to {
+				background-color: rgba(0,0,0,0.3);
+			}
+		}
+		.item.one:hover {
+			background: url('/img/rollover-1.jpg');
+			background-size: 100% auto;
+			.ctn.one {
+				animation-name: bg;
+				animation-duration: 0.5s;
+				background-color: rgba(0,0,0,0.3);
+			}
+		}
+		.item.two:hover {
+			background: url('/img/rollover-2.jpg');
+			background-size: 100% auto;
+			.ctn.two {
+				animation-name: bg;
+				animation-duration: 0.5s;
+				background-color: rgba(0,0,0,0.3);
+			}
+		}
+		.item.three:hover {
+			background: url('/img/rollover-3.jpg');
+			background-size: 100% auto;
+			.ctn.three {
+				animation-name: bg;
+				animation-duration: 0.5s;
+				background-color: rgba(0,0,0,0.3);
+			}
+		}
+		.item.four:hover {
+			background: url('/img/rollover-4.jpg');
+			background-size: 100% auto;
+			.ctn.four {
+				animation-name: bg;
+				animation-duration: 0.5s;
+				background-color: rgba(0,0,0,0.3);
+			}
+		}
+
+	}
+	section.history{
+		background: #f9f4f4;
+		font-size: 28px;
+		@include bp-small-only{
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		@include bp-medium {
+			font-size: rem(28px, $text-bp-md);
+		}
+		@include bp-large {
+			font-size: rem(28px, $text-bp-lg);
+		}
+
+		// .body-text2{
+		// 	position:absolute;
+		// 	height: 600px;
+		// 	font-size: 25px;
+		// 	padding-top: 100px;
+		// }
+		.row {
+			align-items: center;
+			
+			.content {
+				@include bp-small-only {
+					margin-bottom: 50px; 
+				}
+				@include bp-medium {
+					height: rem(750px, $text-bp-md);
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+				}
+				@include bp-large {
+					height: rem(750px, $text-bp-lg);
+				}
+
+			}
+		}
+		#chris-img {
+			@include bp-medium{
+				width: rem(686px, $text-bp-md);
+			}
+			@include bp-large{
+				width: rem(686px, $text-bp-lg);
+			}
+		}
+	}
 	// Move button down
 		.btn-lg-red1{
 		position: absolute;
@@ -178,103 +322,181 @@
 				}
 			}
 	section.recent-projects{
+		font-size: 22px;
+		@include bp-small-only {
+			text-align: center;
+		}
+		@include bp-medium {
+			font-size: rem(22px, $text-bp-md);
+		}
 		@include bp-large{
-		background-color: $white;
-		height: 2000px;
+			// background-color: $white;
+			font-size: rem(22px, $text-bp-md);
 		}
 		
 		.header {
-			position: absolute;
-			// padding-top:70px;
-			padding-left: 100px;
 			font-size: 40px;
+			@include bp-medium {
+				position: absolute;
+				margin-left: rem(100px, $text-bp-md);
+				font-size: rem(40px, $text-bp-md);
+			}
+			@include bp-large {
+				margin-left: rem(100px, $text-bp-md);
+				font-size: rem(40px, $text-bp-md);	
+			}
 		}
-				#rob-apt-img{
-				display: flex;
-				justify-content: flex-end;
-				padding-bottom: 400px;
-				padding-left: 450px;
-				width: 100%;
-				width: 572px;
-				height: 414px;
-				@include bp-large{
-					padding-left: 600px;
+		.row {
+			margin-bottom: 50px;
+			@include bp-medium {
+				margin-bottom: rem(150px, $text-bp-md);
+			}
+			@include bp-large {
+				margin-bottom: rem(150px, $text-bp-lg);
+			}
+			#rob-apt-img {
+				@include bp-medium {
+					width: rem(772, $text-bp-md);
+				}
+				@include bp-large {
+					width: rem(772, $text-bp-md);
 				}
 			}
-		.rob{
-			position: absolute;
-			padding-top: 380px;
-			padding-left: 100px;
-			font-size: 18px;
-			@include bp-large{
-				padding-top: 200px;
-			}
-		}
-				//needs top line to be bold
-		.westside-text{
-			position: absolute;
-			padding-top: 320px;
-			padding-left: 800px;
-			font-size: 18px;
-			@include bp-large{
-				padding-left: 950px;
-			}
-		}
 			#westside-courts-img{
 				width: 100%;
-				width: 684px;
-				height: 478px;
-				@include bp-large{
-					width: 100%;
-					width: 924px;
-					height:478px;
+				@include bp-medium {
+					width: rem(1024px, $text-bp-md);
 				}
-			}
-			//top line needs to bebold
-		.tabernacle-text{
-			position: absolute;
-			padding-top: 415px;
-			font-size:18px;
-			}
-			#tabernacle-img{
-				padding-top: 100px;
-				width:100%;
-				width:672px ;
-				height:414px;
-				padding-left: 450px;
 				@include bp-large{
-					padding-left: 580px; 
+					width: rem(1024px, $text-bp-lg);
 				}
 			}
 		}
+		.row.tabernacle {
+			@include bp-medium {
+				justify-content: space-around;
+			}
+			#tabernacle-img{
+				// padding-top: 100px;
+				width:100%;
+				@include bp-medium{
+					width:rem(772px, $text-bp-md);
+				}
+				@include bp-large{
+					width:rem(772px, $text-bp-lg);
+				}
+			}
+		}
+
+			// 	#rob-apt-img{
+			// 	display: flex;
+			// 	justify-content: flex-end;
+			// 	padding-bottom: 400px;
+			// 	padding-left: 450px;
+			// 	width: 100%;
+			// 	width: 572px;
+			// 	height: 414px;
+			// 	@include bp-large{
+			// 		padding-left: 600px;
+			// 	}
+			// }
+		// .rob{
+		// 	position: absolute;
+		// 	padding-top: 380px;
+		// 	padding-left: 100px;
+		// 	font-size: 18px;
+		// 	@include bp-large{
+		// 		padding-top: 200px;
+		// 	}
+		// }
+				//needs top line to be bold
+		// .westside-text{
+		// 	position: absolute;
+		// 	padding-top: 320px;
+		// 	padding-left: 800px;
+		// 	font-size: 18px;
+		// 	@include bp-large{
+		// 		padding-left: 950px;
+		// 	}
+		// }
+			// #westside-courts-img{
+			// 	width: 100%;
+			// 	width: 684px;
+			// 	height: 478px;
+			// 	@include bp-large{
+			// 		width: 100%;
+			// 		width: 924px;
+			// 		height:478px;
+			// 	}
+			// }
+			//top line needs to bebold
+		// .tabernacle-text{
+		// 	position: absolute;
+		// 	padding-top: 415px;
+		// 	font-size:18px;
+		// }
+		// #tabernacle-img{
+		// 	padding-top: 100px;
+		// 	width:100%;
+		// 	width:672px ;
+		// 	height:414px;
+		// 	padding-left: 450px;
+		// 	@include bp-large{
+		// 		padding-left: 580px; 
+		// 	}
+		// }
 	}
 
 	section.meet-team{
-
-	.row{
-		padding-bottom: 100px;
-	}
-
-		.team-btn{
-		display: flex;
-		justify-content: center;
-		cursor: pointer;
 		text-align: center;
-		background-color: $brick;
-		color: $white;
-		width: rem(256, $text-bp-sm);
-		font-size: rem(22, $text-bp-sm);
-		padding: rem(20px, $text-bp-sm) rem(25px, $text-bp-sm);
-		border-radius: rem(5, $text-bp-sm);
-		margin:  rem(20, $text-bp-sm) auto;
-
-		@include bp-medium {
-			padding-top: 300px;
-			// margin:  0 auto;
-			width: rem(256, $text-bp-md);
-			font-size: rem(22, $text-bp-md);
-			padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
-			border-radius: rem(5, $text-bp-md);
+		.row{
+			margin-bottom: 100px;
+			align-items: center;
+			@include bp-medium {
+				justify-content: center;
+			}
+			.img-ctn {
+				width: 312px;
+				@include bp-small-only {
+					margin: 15px auto;
+				}
+				@include bp-medium {
+					width: rem(312px, $text-bp-md);
+					margin: 0 rem(30px, $text-bp-md);
+				}
+				@include bp-large {
+					width: rem(312px, $text-bp-lg);
+					margin: 0 rem(30px, $text-bp-lg);
 				}
 			}
+			.btn {
+				text-align: center;
+				margin: 0 auto;
+			}
 		}
+
+		// .team-btn{
+		// display: flex;
+		// justify-content: center;
+		// cursor: pointer;
+		// text-align: center;
+		// background-color: $brick;
+		// color: $white;
+		// width: rem(256, $text-bp-sm);
+		// font-size: rem(22, $text-bp-sm);
+		// padding: rem(20px, $text-bp-sm) rem(25px, $text-bp-sm);
+		// border-radius: rem(5, $text-bp-sm);
+		// margin:  rem(20, $text-bp-sm) auto;
+
+		// @include bp-medium {
+		// 	padding-top: 300px;
+		// 	// margin:  0 auto;
+		// 	width: rem(256, $text-bp-md);
+		// 	font-size: rem(22, $text-bp-md);
+		// 	padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
+		// 	border-radius: rem(5, $text-bp-md);
+		// 		}
+		// 	}
+		}
+
+}

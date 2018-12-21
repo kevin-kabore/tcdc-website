@@ -8,7 +8,7 @@
 
 	<link rel="stylesheet" href="css/main.min.css" />
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 	<!--<script src="https://use.fontawesome.com/bac49b7ee8.js"></script>-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/main.min.js"></script>
@@ -41,27 +41,26 @@
 		</div>
 		<div class="header">We make homeownership possible.</div>
 		<div class="section-inner">
-			<div id="house-img">
+			<div class="animated fadeInUpBig delay-2s" id="house-img">
 				<img width="100%" height="auto" src="./img/house.jpg" alt="TCDC">
 			</div>
 		</div>
 	</section>
 
 	<section class="section sub-hero">
-		<div class="header">25 year track record of preventing<br>displacement in San Francisco.</div>
+		<div class="header-ctn">
+			<p class="header">25 year track record of preventing<br>displacement in San Francisco.</p>
+		</div>
 		<div class="subheader"></div>
 		<div class="section-inner">
-		<div class="body-text">
-			<p>We deliver low costs,<br>high quality, and<br>community relationships<br>money can't buy.</p>
-			<p2>Partner with us today.</p2>
-		</div>
-			<div id="tanja-img">
-				<img width="100%" height="auto" src="./img/tanja-heffner.jpg" alt="TCDC">
-			</div>
-			<div class="content">
-				<p></p>
-				<p></p>
-				<a href="/about" class="btn-lg-red">More About TCDC</a>
+			<div class="row">
+				<div id="tanja-img">
+					<img width="100%" height="auto" src="./img/tanja-heffner.jpg" alt="TCDC">
+				</div>
+				<div class="content">
+					<p>We deliver low costs,<br>high quality, and<br>community relationships<br>money can't buy. <br> <br> Partner with us today.</p>
+					<a href="/about" class="btn lg red">More About TCDC</a>
+				</div>
 			</div>
 		</div>
 		<div class="section-footer">
@@ -72,24 +71,57 @@
 	<section class="section our-services">
 		<div class="header-services">OUR SERVICES</div>
 		<div class="container">
-			<div class="item">01<br>Plan Study & Advice</div>
-			<div class="item">02<br>Land Development</div>
-			<div class="item">03<br>Building Develpment</div>
-			<div class="item">04<br>Operations</div>
+			<div class="item one">
+				<div class="ctn one">
+					<p><span class="numb">01</span><br>Plan Study & Advice</p>
+				</div>
+			</div>
+			<div class="item two">
+				<div class="ctn two">
+					<p><span class="numb">02</span><br>Land Development</p>
+				</div>
+			</div>
+			<div class="item three">
+				<div class="ctn three">
+					<p><span class="numb">03</span><br>Building Develpment</p>		
+				</div>
+			</div>
+			<div class="item four">
+				<div class="ctn four">
+					<p><span class="numb">04</span><br>Operations</p>		
+				</div>
+			</div>
 		</div>
 	</section> 
 		<section class="section history">
-			<div class="body-text2" >
+			<div class="row">
+				<div class="content">
+					<div class="copy-ctn">
+						<p>We have a history of award-winning<br>
+						developments and wraparound services<br>
+						for residents, including job training and<br>early childhood education.</p>
+						<p>We build more than housing.</p>
+						<p class="bold">We build communities.</p>	
+					</div>
+					<a href="/projects" class="btn lg red">See all Projects</a>
+				</div>
+
+				<div id="chris-img">
+					<img width="100%" height="auto" src="./img/chris-benson.jpg" alt="TCDC">
+				</div>
+			</div>
+			
+			<!-- <div class="body-text2" >
 				<p>We have a history of award-winning<br>
 				developments and wraparound services<br>
 				for residents, including job training and<br>early childhood education.</p>
 				<p>We build more than housing.</p>
 				<p class="bold">We build communities.</p>
-				<a href="/projects" class="btn-lg-red1">See all Projects</a>
-			</div>
-			<div id="chris-img">
+				<a href="/projects" class="btn lg red">See all Projects</a>
+			</div> -->
+			<!-- <div id="chris-img">
 				<img width="100%" height="auto" src="./img/chris-benson.jpg" alt="TCDC">
-			</div>
+			</div> -->
 		</div>
 		<div class="section-footer">
 			
@@ -97,29 +129,54 @@
 	</section>  
 
 	<section class="section recent-projects">
-				<div class="header">Recent Projects</div>
-		<div class="rob">
-				<span class="bold">Robert B. Pitts Apartment Homes</span> <br> 1150 Scott Street <br> San Francisco</div>
+		<p class="header">Recent Projects</p>
+
+		<div class="row">
+			<p><span class="bold">Robert B. Pitts Apartment Homes</span> <br> 1150 Scott Street <br> San Francisco</p>
+			
 			<div id="rob-apt-img">
 				<img width="100%" height="auto" src="./img/rob-apt.jpg" alt="TCDC">
 			</div>
+		</div>
+
+		<div class="row">
+			<div id="westside-courts-img">
+				<img width="100%" height="auto" src="./img/westside.jpg" alt="TCDC">
 			</div>
-		<div class="westside">
+
+			<p><span class="bold">Westside Courts</span> <br> 2501 Sutter Street <br>San Francisco</p>
+		</div>
+
+		<div class="row tabernacle">
+			<p><span class="bold">Tabernacle Vista Apartments</span> <br> 2139 O’Farrell Street <br>San Francisco</p>
+
+			<div id="tabernacle-img">
+				<img width="100%" height="auto" src="./img/tabernacle.jpg" alt="TCDC">
+			</div>
+		</div>
+
+		<!-- <div class="rob">
+			<span class="bold">Robert B. Pitts Apartment Homes</span> <br> 1150 Scott Street <br> San Francisco
+		</div>
+		<div id="rob-apt-img">
+			<img width="100%" height="auto" src="./img/rob-apt.jpg" alt="TCDC">
+		</div> -->
+		<!-- <div class="westside">
 			<div class="westside-text">
 				<span class="bold">Westside Courts</span> <br> 2501 Sutter Street <br>San Francisco
 				</div>
 			<div id="westside-courts-img">
 				<img width="100%" height="auto" src="./img/westside.jpg" alt="TCDC">
 			</div>
-		</div>
-		<div class="tabernacle">
+		</div> -->
+		<!-- <div class="tabernacle">
 			<div class="tabernacle-text">
 				<span class="bold">Tabernacle Vista Apartments</span> <br> 2139 O’Farrell Street <br>San Francisco
 			</div>
 			<div id="tabernacle-img">
 				<img width="100%" height="auto" src="./img/tabernacle.jpg" alt="TCDC">
 			</div>
-		</div>
+		</div> -->
 	</section>
 
 	<section class="section meet-team">
@@ -131,7 +188,7 @@
 				<img width="100%" height="auto" src="./img/meet-team-2.jpg" alt="TCDC">
 			</div>
 		</div>
-		<a href="/" class="team-btn">Meet The Team</a>
+		<a href="/contact" class="btn lg red">Meet The Team</a>
 	</section>
 
 </body>

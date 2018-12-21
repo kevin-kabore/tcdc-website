@@ -1,4 +1,8 @@
 #contact {
+	@include bp-small-only {
+		text-align: center;
+	}
+
 	.section.staff, .section.board, .section.not-pictured {
 		@include bp-medium {
 			padding-bottom: 0;
@@ -21,6 +25,15 @@
 		.row {
 			@include bp-medium {
 				align-items: flex-start;
+			}
+			.img-container {
+				@include bp-small-only {
+					width: 312px;
+					margin: 0 auto;
+				}
+				@include bp-medium {
+					margin: 0 5px;
+				}
 			}
 			.copy-ctn {
 				font-size: 22px;
@@ -46,6 +59,7 @@
 	.section.staff {
 		.container {
 			.img-container {
+				
 				@include bp-medium {
 					width: rem(300px, $text-bp-md);
 				}
