@@ -26,6 +26,10 @@
   @include bp-large {
     font-size: rem(46, $text-bp-lg);
   }
+  .header,
+  .preheader {
+    color: #f4efee;
+  }
   .preheader,
   .header,
   .subheader {
@@ -38,11 +42,11 @@
     padding: rem(20, $text-bp-sm) rem(50, $text-bp-sm);
     @include bp-medium {
       padding-top: rem(50, $text-bp-md);
-      padding-left: rem(136, $text-bp-md);
+      padding-left: rem(110, $text-bp-md);
     }
     @include bp-large {
       padding-top: rem(50, $text-bp-lg);
-      padding-left: rem(136, $text-bp-lg);
+      padding-left: rem(110, $text-bp-lg);
     }
   }
   .preheader {
@@ -123,6 +127,8 @@
 
   @include bp-medium {
     padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
   .header {
     font-size: rem(46, $text-bp-sm);
@@ -157,8 +163,8 @@
   }
 }
 
-.bold{
-  font-weight: bold; 
+.bold {
+  font-weight: bold;
 }
 
 .line {
@@ -197,17 +203,17 @@
   background-color: $brick;
   color: $white;
 
-  width: rem(256, $text-bp-sm);
-  font-size: rem(22, $text-bp-sm);
-  padding: rem(20px, $text-bp-sm) rem(25px, $text-bp-sm);
-  border-radius: rem(5, $text-bp-sm);
+  width: 256px;
+  font-size: 22px;
+  padding: 20px 25px;
+  border-radius: 5px;
   margin: rem(20, $text-bp-sm) auto;
   @include bp-medium {
     margin: 0 auto;
 
     width: rem(256, $text-bp-md);
     font-size: rem(22, $text-bp-md);
-    padding: rem(25px, $text-bp-md) rem(25px, $text-bp-md);
+    padding: rem(30px, $text-bp-md) rem(30px, $text-bp-md);
     border-radius: rem(5, $text-bp-md);
   }
   @include bp-large {
@@ -245,10 +251,10 @@
   p {
     margin: 0;
     @include bp-medium {
-      padding: 0 rem(25, $text-bp-md);
+      padding: 0 rem(50, $text-bp-md);
     }
     @include bp-large {
-      padding: 0 rem(25, $text-bp-lg);
+      padding: 0 rem(50, $text-bp-lg);
     }
   }
   .header {
@@ -261,8 +267,8 @@
     }
   }
   .subheader {
-    font-weight: 100;
-
+    // font-weight: 100;
+    color: #f4efee;
     font-size: rem(40, $text-bp-sm);
     @include bp-medium {
       font-size: rem(40, $text-bp-md);

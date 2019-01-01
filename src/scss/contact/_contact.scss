@@ -1,143 +1,207 @@
 #contact {
-	@include bp-small-only {
-		text-align: center;
-	}
+  @include bp-small-only {
+    text-align: center;
+  }
 
-	.section.staff, .section.board, .section.not-pictured {
-		@include bp-medium {
-			padding-bottom: 0;
-		}
-		.header {
-			text-align: center;
+  .section.staff,
+  .section.board,
+  .section.not-pictured {
+    @include bp-medium {
+      padding-bottom: 0;
+    }
+    .header {
+      text-align: center;
 
-			font-size: 32px;
-			font-weight: 600;
-			@include bp-medium {
-				font-size: rem(32px, $text-bp-md);
-				margin-bottom: rem(50, $text-bp-md);
-			}
-			@include bp-medium {
-				font-size: rem(32px, $text-bp-lg);
-				margin-bottom: rem(50, $text-bp-lg);
-			}
-		}
+      font-size: 32px;
+      font-weight: 600;
+      @include bp-medium {
+        font-size: rem(32px, $text-bp-md);
+        margin-bottom: rem(50, $text-bp-md);
+      }
+      @include bp-medium {
+        font-size: rem(32px, $text-bp-lg);
+        margin-bottom: rem(50, $text-bp-lg);
+      }
+    }
 
-		.row {
-			@include bp-medium {
-				align-items: flex-start;
-			}
-			.img-container {
-				@include bp-small-only {
-					width: 312px;
-					margin: 0 auto;
-				}
-				@include bp-medium {
-					margin: 0 5px;
-				}
-			}
-			.copy-ctn {
-				font-size: 22px;
-				padding-top: 40px;
-				@include bp-medium {
-					font-size: rem(22px, $text-bp-md);
-					padding: rem(40px, $text-bp-md) rem(25px, $text-bp-md) 0 rem(25px, $text-bp-md);
-				}
-				@include bp-large {
-					font-size: rem(22px, $text-bp-lg);
-					padding: rem(40px, $text-bp-lg) rem(25px, $text-bp-lg) 0 rem(25px, $text-bp-lg);
-				}
-				p {
-					margin: 0 auto;
-				}
-				p.name {
-					font-weight: 800;
-				}
-			}
-		}
-	}
+    .row {
+      @include bp-medium {
+        align-items: flex-start;
+      }
+      .img-container {
+        @include bp-small-only {
+          width: 312px;
+          margin: 0 auto;
+        }
+        @include bp-medium {
+          width: rem(300, $text-bp-md);
+          margin: 0 5px;
+        }
+        @include bp-large {
+          width: rem(300, $text-bp-lg);
+        }
+      }
+      .copy-ctn {
+        font-size: 22px;
+        padding-top: 40px;
+        text-align: center;
+        @include bp-small-only {
+          margin-bottom: 50px;
+        }
+        @include bp-medium {
+          font-size: rem(20px, $text-bp-md);
+          padding: rem(40px, $text-bp-md) rem(25px, $text-bp-md) 0
+            rem(25px, $text-bp-md);
+        }
+        @include bp-large {
+          font-size: rem(20px, $text-bp-lg);
+          padding: rem(40px, $text-bp-lg) rem(25px, $text-bp-lg) 0
+            rem(25px, $text-bp-lg);
+        }
+        p {
+          margin: 0 auto;
+        }
+        p.name {
+          font-weight: 600;
+        }
+      }
+    }
+  }
 
-	.section.staff {
-		.container {
-			.img-container {
-				
-				@include bp-medium {
-					width: rem(300px, $text-bp-md);
-				}
-				@include bp-large {
-					width: rem(300px, $text-bp-lg);
-				}
-			}
+  .section.staff {
+    .container {
+      .img-container {
+        @include bp-medium {
+          width: rem(280px, $text-bp-md);
+          margin: 0 rem(10px, $text-bp-md);
+        }
+        @include bp-large {
+          width: rem(300px, $text-bp-lg);
+          margin: 0 rem(10px, $text-bp-lg);
+        }
+      }
 
-			.copy-ctn {
-			}
-		}
-	}
+      .copy-ctn {
+      }
+    }
+  }
 
-	.section.board {
-		@include bp-medium {
-			width: 60%;
-			margin: 0 auto;
-		}
+  .header.board {
+    text-align: center;
 
-		.row {
-			@include bp-medium {
-				margin-bottom: rem(75, $text-bp-md);
-			}
-			@include bp-large {
-				margin-bottom: rem(75, $text-bp-lg);
-			}
-			.container {
-				.img-container {
-					@include bp-medium {
-						width: rem(234, $text-bp-md);
-					}
-					@include bp-large {
-						width: rem(234, $text-bp-lg);
-					}
-				}
-				.copy-ctn {
-					padding-top: 20px;
-					@include bp-medium {
-						font-size: rem(22px, $text-bp-md);
-						padding: rem(20px, $text-bp-md) 0 0 0;
-					}
-					@include bp-large {
-						font-size: rem(22px, $text-bp-lg);
-						padding: rem(20px, $text-bp-lg) 0 0 0;
-					}
-				}
-			}
-		}
-		.row.last {
-			margin-bottom: 0;
-		}
-	}
+    font-size: 32px;
+    font-weight: 600;
+    @include bp-medium {
+      font-size: rem(32px, $text-bp-md);
+      margin-top: rem(50, $text-bp-md);
+    }
+    @include bp-medium {
+      font-size: rem(32px, $text-bp-lg);
+      margin-top: rem(50, $text-bp-lg);
+    }
+  }
 
-	.section.not-pictured {
-		.header {
-			margin-bottom: 0;
-		}
-		.name {
-			text-align: center;
-			font-size: 22px;
-			padding-top: 40px;
-			@include bp-medium {
-				font-size: rem(22px, $text-bp-md);
-				padding: rem(40px, $text-bp-md) rem(25px, $text-bp-md) 0 rem(25px, $text-bp-md);
-			}
-			@include bp-large {
-				font-size: rem(22px, $text-bp-lg);
-				padding: rem(40px, $text-bp-lg) rem(25px, $text-bp-lg) 0 rem(25px, $text-bp-lg);
-			}
-		}
-		.name.last {
-			@include bp-medium {
-				margin-bottom: rem(40px, $text-bp-md);
-			}
-			@include bp-large {
-				margin-bottom: rem(40px, $text-bp-lg);
-			}	
-		}
-	}
+  .section.board {
+    @include bp-medium {
+      // width: 60%;
+      margin: 0 auto;
+      padding-top: 0;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .row-container {
+      background-color: #f9f4f4;
+      .row {
+        padding-bottom: rem(25px, $text-bp-md);
+        margin-bottom: 0;
+      }
+    }
+    .row {
+      @include bp-medium {
+        width: 70%;
+        margin-bottom: rem(75, $text-bp-md);
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @include bp-large {
+        width: 60%;
+        margin-bottom: rem(75, $text-bp-lg);
+      }
+      .container {
+        .name-header {
+          text-align: center;
+          font-size: 20px;
+          padding: 15px 0;
+          @include bp-medium {
+            font-size: rem(20px, $text-bp-md);
+            padding: rem(15px, $text-bp-md) 0;
+          }
+          @include bp-large {
+            font-size: rem(20px, $text-bp-lg);
+            padding: rem(15px, $text-bp-lg) 0;
+          }
+          span.name {
+            font-weight: 600;
+          }
+        }
+        .img-container {
+          @include bp-medium {
+            width: rem(234, $text-bp-md);
+            margin: 0;
+          }
+          @include bp-large {
+            width: rem(234, $text-bp-lg);
+          }
+        }
+        .copy-ctn {
+          padding-top: 20px;
+          text-align: left;
+          @include bp-small-only {
+            text-align: center;
+          }
+          @include bp-medium {
+            font-size: rem(20px, $text-bp-md);
+            padding: rem(34px, $text-bp-md) 0 0 0;
+          }
+          @include bp-large {
+            font-size: rem(20px, $text-bp-lg);
+            padding: rem(34px, $text-bp-lg) 0 0 0;
+          }
+        }
+      }
+    }
+    .row.last {
+      margin-bottom: 0;
+    }
+  }
 
+  .section.not-pictured {
+    padding-top: 0;
+    .header {
+      margin-bottom: 0;
+    }
+    .name {
+      text-align: center;
+      font-size: 22px;
+      padding-top: 40px;
+      @include bp-medium {
+        font-size: rem(22px, $text-bp-md);
+        padding: rem(40px, $text-bp-md) rem(25px, $text-bp-md) 0
+          rem(25px, $text-bp-md);
+      }
+      @include bp-large {
+        font-size: rem(22px, $text-bp-lg);
+        padding: rem(40px, $text-bp-lg) rem(25px, $text-bp-lg) 0
+          rem(25px, $text-bp-lg);
+      }
+    }
+    .name.last {
+      @include bp-medium {
+        margin-bottom: rem(40px, $text-bp-md);
+      }
+      @include bp-large {
+        margin-bottom: rem(40px, $text-bp-lg);
+      }
+    }
+  }
 }

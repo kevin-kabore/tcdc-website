@@ -1,84 +1,86 @@
 #projects {
-	.section.main {
-		.row {
-			margin-bottom: rem(50, $text-bp-sm);
-			@include bp-medium {
-				margin-bottom: rem(200, $text-bp-md);
-			}
-			@include bp-large {
-				margin-bottom: rem(200, $text-bp-lg);
-			}
-		}
-		.details-ctn {
-			display: flex;
-			flex-direction: column;
+  .section.main {
+    .row {
+      margin-bottom: rem(50, $text-bp-sm);
+      @include bp-medium {
+        margin-bottom: rem(200, $text-bp-md);
+      }
+      @include bp-large {
+        margin-bottom: rem(200, $text-bp-lg);
+      }
+    }
+    .details-ctn {
+      display: flex;
+      flex-direction: column;
 
-			height: rem(225, $text-bp-sm);	
-			font-size: rem(22, $text-bp-sm);
-			letter-spacing: rem(1, $text-bp-sm);
-			margin: rem(25, $text-bp-sm);
-			@include bp-medium {
-				justify-content: space-between;
-				
-				height: rem(225, $text-bp-md);	
-				font-size: rem(22, $text-bp-md);
-				letter-spacing: rem(1, $text-bp-md);
-				margin: 0 rem(25, $text-bp-md) rem(2, $text-bp-md) rem(25, $text-bp-md) ;
-			}
-			@include bp-large {
-				height: rem(225, $text-bp-lg);	
-				font-size: rem(22, $text-bp-lg);
-				letter-spacing: rem(1, $text-bp-lg);
-				margin: 0 rem(25, $text-bp-lg) rem(2, $text-bp-lg) rem(25, $text-bp-lg) ;
-			}
-			p {
-				margin: 0;
-			}
-			.copy-ctn {
-				margin: 0 auto;
-				p.name {
-					font-weight: bold;
+      height: rem(225, $text-bp-sm);
+      font-size: rem(22, $text-bp-sm);
+      letter-spacing: rem(1, $text-bp-sm);
+      margin: rem(25, $text-bp-sm);
+      @include bp-medium {
+        justify-content: space-between;
 
-					margin-bottom: rem(5, $text-bp-sm);
-					@include bp-medium {
-						margin-bottom: rem(5, $text-bp-md);
-					}
-					@include bp-large {
-						margin-bottom: rem(5, $text-bp-lg);
-					}
-				}
-				p.address {
-					font-weight: 300;
-				}
-			}
-		}
-		#projects-img-1 {
-			width: 100%;
-			@include bp-medium {
-				width: rem(1024, $text-bp-md);
-			}
-			@include bp-large {
-				width: rem(1024, $text-bp-lg);
-			}
-		}
-		#projects-img-2, #projects-img-3, #projects-img-5 {
-			width: 100%;
-			@include bp-medium {
-				width: rem(772, $text-bp-md);
-			}
-			@include bp-large {
-				width: rem(772, $text-bp-lg);
-			}
-		}
+        height: rem(225, $text-bp-md);
+        font-size: rem(17, $text-bp-md);
+        letter-spacing: rem(1, $text-bp-md);
+        margin: 0 rem(25, $text-bp-md) rem(2, $text-bp-md) rem(25, $text-bp-md);
+      }
+      @include bp-large {
+        height: rem(225, $text-bp-lg);
+        font-size: rem(18, $text-bp-lg);
+        letter-spacing: rem(1, $text-bp-lg);
+        margin: 0 rem(25, $text-bp-lg) rem(2, $text-bp-lg) rem(25, $text-bp-lg);
+      }
+      p {
+        margin: 0;
+      }
+      .copy-ctn {
+        margin: 0 auto;
+        p.name {
+          font-weight: bold;
 
-		#projects-img-4 {
-			width: 100%;
-			@include bp-medium {
-				width: rem(958, $text-bp-md);
-			}
-			@include bp-large {
-				width: rem(958, $text-bp-lg);
-			}
-		}
-	}
+          margin-bottom: rem(5, $text-bp-sm);
+          @include bp-medium {
+            margin-bottom: rem(5, $text-bp-md);
+          }
+          @include bp-large {
+            margin-bottom: rem(5, $text-bp-lg);
+          }
+        }
+        p.address {
+          font-weight: 300;
+        }
+      }
+    }
+    #projects-img-1 {
+      width: 100%;
+      @include bp-medium {
+        width: rem(1024, $text-bp-md);
+      }
+      @include bp-large {
+        width: rem(1024, $text-bp-lg);
+      }
+    }
+    #projects-img-2,
+    #projects-img-3,
+    #projects-img-5 {
+      width: 100%;
+      @include bp-medium {
+        width: rem(772, $text-bp-md);
+      }
+      @include bp-large {
+        width: rem(772, $text-bp-lg);
+      }
+    }
+
+    #projects-img-4 {
+      width: 100%;
+      @include bp-medium {
+        width: rem(958, $text-bp-md);
+      }
+      @include bp-large {
+        width: rem(958, $text-bp-lg);
+      }
+    }
+  }
 }

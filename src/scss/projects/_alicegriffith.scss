@@ -72,6 +72,19 @@
       }
     }
     .section-row.bottom {
+      .row {
+        @include bp-medium {
+          justify-content: flex-end;
+        }
+        .box.green {
+          @include bp-medium {
+            margin-right: rem(100, $text-bp-md);
+          }
+          @include bp-large {
+            margin-right: rem(100, $text-bp-lg);
+          }
+        }
+      }
       .img-container {
         margin: 0 auto;
 

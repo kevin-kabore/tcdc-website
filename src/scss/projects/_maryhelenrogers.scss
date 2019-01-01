@@ -14,7 +14,6 @@
         #mary-helen-img-1 {
           width: 100%;
           @include bp-medium {
-
             width: rem(754, $text-bp-md);
           }
           @include bp-large {
@@ -37,14 +36,13 @@
       }
     }
     .section-row.middle {
-
       #mary-helen-img-2 {
         @include bp-medium {
           z-index: 2;
-          margin-left: auto; 
+          margin-left: auto;
 
           width: rem(511, $text-bp-md);
-          margin-top: rem(-55, $text-bp-md); 
+          margin-top: rem(-55, $text-bp-md);
           margin-right: rem(50, $text-bp-md);
         }
         @include bp-large {
@@ -75,6 +73,19 @@
       }
     }
     .section-row.bottom {
+      > .row {
+        @include bp-medium {
+          justify-content: flex-end;
+        }
+        .box.green {
+          @include bp-medium {
+            margin-right: rem(100, $text-bp-md);
+          }
+          @include bp-large {
+            margin-right: rem(100, $text-bp-lg);
+          }
+        }
+      }
       .copy-ctn {
         .row {
           justify-content: center;
@@ -84,7 +95,6 @@
           margin: 0 40px;
         }
         .img-container.one {
-
           width: rem(161, $text-bp-sm);
           @include bp-medium {
             width: rem(161, $text-bp-md);
@@ -94,7 +104,6 @@
           }
         }
         .img-container.two {
-
           width: rem(166, $text-bp-sm);
           @include bp-medium {
             width: rem(166, $text-bp-md);

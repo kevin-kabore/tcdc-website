@@ -42,7 +42,7 @@
           z-index: 1;
 
           left: rem(570, $text-bp-md);
-          width: rem(551, $text-bp-md);
+          width: rem(650, $text-bp-md);
           bottom: rem(100, $text-bp-md);
         }
         @include bp-large {
@@ -70,14 +70,14 @@
           @include bp-medium {
             position: relative;
 
-            width: rem(939, $text-bp-md);
+            width: rem(900, $text-bp-md);
             bottom: rem(175, $text-bp-md);
-            right: rem(110, $text-bp-md);
+            left: rem(30, $text-bp-md);
           }
           @include bp-large {
             width: rem(1089, $text-bp-lg);
             bottom: rem(175, $text-bp-lg);
-            right: rem(121, $text-bp-lg);
+            right: rem(35, $text-bp-lg);
           }
         }
       }
@@ -89,6 +89,19 @@
       }
       @include bp-large {
         margin-top: rem(92, $text-bp-lg);
+      }
+      .row {
+        @include bp-medium {
+          justify-content: flex-end;
+        }
+        .box.green {
+          @include bp-medium {
+            margin-right: rem(100, $text-bp-md);
+          }
+          @include bp-large {
+            margin-right: rem(100, $text-bp-lg);
+          }
+        }
       }
       .copy-ctn {
         text-align: center;
@@ -102,6 +115,17 @@
         @include bp-large {
           font-size: rem(22, $text-bp-lg);
           margin-top: rem(50, $text-bp-lg);
+        }
+        .img-container {
+          margin: 0 auto;
+
+          width: rem(227, $text-bp-sm);
+          @include bp-medium {
+            width: rem(227, $text-bp-md);
+          }
+          @include bp-large {
+            width: rem(227, $text-bp-lg);
+          }
         }
       }
     }

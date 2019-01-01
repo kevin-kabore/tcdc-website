@@ -50,7 +50,6 @@
         @include bp-medium {
           height: 65%;
           justify-content: flex-start;
-
         }
         @include bp-large {
         }
@@ -67,15 +66,24 @@
     .section-row.bottom {
       .row {
         .box.green {
-            @include bp-medium {
-              width: rem(400, $text-bp-md);
-            }
+          @include bp-medium {
+            width: rem(400, $text-bp-md);
           }
+        }
       }
       .copy-ctn {
         .row {
         }
         .img-container {
+          margin: 0 auto;
+
+          width: rem(382, $text-bp-sm);
+          @include bp-medium {
+            width: rem(382, $text-bp-md);
+          }
+          @include bp-large {
+            width: rem(382, $text-bp-lg);
+          }
         }
       }
     }

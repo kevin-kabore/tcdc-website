@@ -62,13 +62,17 @@
       }
       #robert-pitts-img-3 {
         @include bp-medium {
+          position: relative;
+          left: rem(140, $text-bp-md);
           width: rem(634, $text-bp-md);
         }
         @include bp-large {
+          left: rem(210, $text-bp-lg);
           width: rem(775, $text-bp-lg);
         }
       }
     }
+
     .section-row.bottom {
       .img-container {
         margin: 0 auto;

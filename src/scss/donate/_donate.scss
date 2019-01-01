@@ -1,4 +1,3 @@
-#about,
 #donate {
   div.section {
     @include bp-medium {
@@ -23,24 +22,14 @@
     .copy-ctn {
       font-size: 22px;
       @include bp-medium {
-        font-size: rem(22px, $text-bp-md);
+        font-size: rem(20px, $text-bp-md);
+        margin-top: rem(50, $text-bp-md);
       }
       @include bp-large {
         font-size: rem(22px, $text-bp-lg);
+        margin-top: rem(50, $text-bp-lg);
       }
 
-      ol,
-      ul,
-      li {
-        @include bp-medium {
-          margin-left: rem(-10, $text-bp-md);
-        }
-        @include bp-large {
-          margin-left: rem(-10, $text-bp-lg);
-        }
-      }
-
-      li,
       p {
         margin-top: 25px;
         @include bp-medium {
@@ -49,6 +38,9 @@
         @include bp-large {
           margin-top: rem(25px, $text-bp-lg);
         }
+      }
+      p.address {
+        font-weight: 600;
       }
     }
   }
