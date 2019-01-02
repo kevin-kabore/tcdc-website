@@ -4,7 +4,10 @@
       // bp-medium is like a media query for medium screens
       // use rem(pixels, $text-bp-md) for medium font sizes, widths, padding etc
       // use rem(pixels, $text-bp-sm) for small font sizes, widths, padding etc
-      height: rem(748, $text-bp-md);
+      height: rem(660, $text-bp-md);
+    }
+    @include bp-large {
+      height: rem(728, $text-bp-md);
     }
     .preheader,
     .header {
@@ -15,7 +18,7 @@
       }
     }
     .header {
-      font-weight: bold;
+      font-weight: 600;
     }
     .section-inner {
       @include bp-medium {
@@ -25,7 +28,7 @@
       //fix positioning
       #house-img {
         width: 100%;
-        padding-top: 100px;
+        padding-top: 50px;
         @include bp-medium {
           position: absolute;
           width: rem(768, $text-bp-md);
@@ -59,7 +62,7 @@
       justify-content: center;
     }
     .header {
-      font-size: 45px;
+      font-size: rem(36, $text-bp-sm);
       margin-top: rem(20px, $text-bp-md);
       @include bp-medium {
         font-size: rem(45px, $text-bp-md);
@@ -177,7 +180,7 @@
       text-align: left;
       border: 1px solid #d3d3d3;
 
-      height: 480px;
+      height: 400px;
       font-size: 18px;
       @include bp-medium {
         flex-basis: 25%;
@@ -354,7 +357,7 @@
       }
       p {
         @include bp-medium {
-          margin-left: rem(80px, $text-bp-md);
+          margin-left: rem(30px, $text-bp-md);
           position: relative;
           bottom: rem(50, $text-bp-md);
         }

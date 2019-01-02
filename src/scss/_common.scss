@@ -15,7 +15,7 @@
 
 .section.hero {
   background-color: $plum;
-  font-size: rem(46, $text-bp-sm);
+  font-size: rem(36, $text-bp-sm);
   color: #fff;
   @include bp-medium {
     padding-top: 0;
@@ -53,7 +53,7 @@
     font-weight: 200;
   }
   .header {
-    font-weight: bold;
+    font-weight: 600;
   }
   .subheader {
     padding-top: 0;

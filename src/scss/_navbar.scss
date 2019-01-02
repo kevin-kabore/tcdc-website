@@ -46,9 +46,25 @@
         display: flex;
         text-decoration: none;
         color: #fff;
-      }
-      p {
-        margin-left: 10px;
+        align-items: center;
+        .img-ctn {
+          width: 72px;
+          @include bp-medium {
+            width: rem(72, $text-bp-md);
+          }
+          @include bp-large {
+            width: rem(72, $text-bp-lg);
+          }
+        }
+        p {
+          margin: 0 0 10px 10px;
+          @include bp-medium {
+            margin: 0 0 rem(10px, $text-bp-md) rem(10px, $text-bp-md);
+          }
+          @include bp-large {
+            margin: 0 0 rem(10px, $text-bp-lg) rem(10px, $text-bp-lg);
+          }
+        }
       }
     }
     .nav-links {
