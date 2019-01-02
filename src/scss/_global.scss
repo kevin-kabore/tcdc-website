@@ -2,24 +2,32 @@
  * Global
  */
 
-html, body {
-    overflow: none;
-    // minimum size
-    font-size: $text-bp-min;
-    
-    @include bp-small {     // mobile size
-        font-size: vw($text-bp-sm,$screen-bp-sm);
-    }
-    
-    @include bp-medium {    // tablet size
-        font-size: vw($text-bp-md,$screen-bp-md);
-    }
-    
-    @include bp-large {     // desktop size
-        font-size: vw($text-bp-lg,$screen-bp-lg);
-    }
-    
-    @include bp-xlarge {    // maximum size
-        font-size: $text-bp-lg;
-    }
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800');
+
+html,
+body {
+  overflow: none;
+  // minimum size
+  font-size: $text-bp-min;
+  font-family: 'Muli', sans-serif;
+
+  @include bp-small {
+    // mobile size
+    font-size: vw($text-bp-sm, $screen-bp-sm);
+  }
+
+  @include bp-medium {
+    // tablet size
+    font-size: vw($text-bp-md, $screen-bp-md);
+  }
+
+  @include bp-large {
+    // desktop size
+    font-size: vw($text-bp-lg, $screen-bp-lg);
+  }
+
+  @include bp-xlarge {
+    // maximum size
+    font-size: $text-bp-lg;
+  }
 }
