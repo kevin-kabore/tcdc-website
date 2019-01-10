@@ -33,7 +33,7 @@
       animation-timing-function: ease-in;
       display: flex;
       align-items: center;
-      color: #fff;
+      color: #f4efee;
       font-size: 32px;
 
       @include bp-medium {
@@ -45,7 +45,7 @@
       a {
         display: flex;
         text-decoration: none;
-        color: #fff;
+        color: #f4efee;
         align-items: center;
         .img-ctn {
           width: 72px;
@@ -56,6 +56,16 @@
             width: rem(72, $text-bp-lg);
           }
         }
+        .img-ctn2 {
+          width: 110px;
+          margin: 0 0 0px 5px;
+          @include bp-medium {
+            width: rem(110, $text-bp-md);
+          }
+          @include bp-large {
+            width: rem(110, $text-bp-lg);
+          } 
+        }
         p {
           margin: 0 0 10px 10px;
           @include bp-medium {
@@ -65,6 +75,9 @@
             margin: 0 0 rem(10px, $text-bp-lg) rem(10px, $text-bp-lg);
           }
         }
+      }
+      a:hover, a:active {
+        color: #fff;
       }
     }
     .nav-links {
@@ -78,11 +91,16 @@
       text-align: center;
       @include bp-medium {
         display: flex;
+        flex-basis: 55%;
+        justify-content: space-between;
       }
       li {
         font-size: rem(22, $text-bp-sm);
         @include bp-medium {
           font-size: rem(22, $text-bp-md);
+        }
+        @include bp-large {
+          font-size: rem(22, $text-bp-lg);
         }
       }
       li:not(:last-child) {
@@ -95,12 +113,17 @@
       }
       a {
         text-decoration: none;
-        color: $white;
-        font-weight: 200;
+        color: #f4efee;
+        font-weight: 600;
+      }
+      a:hover, a:active {
+        color: #fff;
       }
 
       .donate {
         background-color: #b8302a;
+        border-radius: 4px;
+
         padding: rem(12, $text-bp-sm);
         @include bp-medium {
           padding: rem(12, $text-bp-md);

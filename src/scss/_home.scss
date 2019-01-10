@@ -176,7 +176,7 @@
     }
     // Move numbers to the left and thin out font. Move text down.
     .item {
-      color: $white;
+      color: #f4efee;
       text-align: left;
       border: 1px solid #d3d3d3;
 
@@ -304,7 +304,7 @@
     cursor: pointer;
     text-align: center;
     background-color: $brick;
-    color: $white;
+    color: #f4efee;
     width: rem(256, $text-bp-sm);
     font-size: rem(22, $text-bp-sm);
     padding: rem(20px, $text-bp-sm) rem(25px, $text-bp-sm);

@@ -15,13 +15,13 @@
 
 .section.hero {
   background-color: $plum;
-  font-size: rem(36, $text-bp-sm);
-  color: #fff;
+  font-size: rem(27, $text-bp-sm);
+  color: #f4efee;
   @include bp-medium {
     padding-top: 0;
 
     height: auto;
-    font-size: rem(46, $text-bp-md);
+    font-size: rem(40, $text-bp-md);
   }
   @include bp-large {
     font-size: rem(46, $text-bp-lg);
@@ -201,7 +201,7 @@
   text-align: center;
   text-decoration: none;
   background-color: $brick;
-  color: $white;
+  color: #f4efee;
 
   width: 256px;
   font-size: 22px;
@@ -225,13 +225,13 @@
   &:hover,
   &:active {
     color: $brick;
-    background-color: $white;
+    background-color: #f4efee;
     border: 1px solid $brick;
   }
 }
 
 .box {
-  color: #fff;
+  color: #f4efee;
   display: flex;
   flex-direction: column;
   justify-content: center;
