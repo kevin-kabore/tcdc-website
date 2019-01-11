@@ -58,12 +58,12 @@
         }
         .img-ctn2 {
           width: 110px;
-          margin: 0 0 0px 5px;
+          margin: 3px 0 0 15px;
           @include bp-medium {
-            width: rem(110, $text-bp-md);
+            width: rem(145, $text-bp-md);
           }
           @include bp-large {
-            width: rem(110, $text-bp-lg);
+            width: rem(145, $text-bp-lg);
           } 
         }
         p {
@@ -95,12 +95,12 @@
         justify-content: space-between;
       }
       li {
-        font-size: rem(22, $text-bp-sm);
+        font-size: rem(18.5, $text-bp-sm);
         @include bp-medium {
-          font-size: rem(22, $text-bp-md);
+          font-size: rem(18.5, $text-bp-md);
         }
         @include bp-large {
-          font-size: rem(22, $text-bp-lg);
+          font-size: rem(18.5, $text-bp-lg);
         }
       }
       li:not(:last-child) {
@@ -113,8 +113,8 @@
       }
       a {
         text-decoration: none;
-        color: #f4efee;
-        font-weight: 600;
+        color: #E7D7D6;
+        font-weight: 400;
       }
       a:hover, a:active {
         color: #fff;
