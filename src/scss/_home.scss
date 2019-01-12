@@ -252,7 +252,7 @@
   }
   section.history {
     background: #f9f4f4;
-    font-size: 28px;
+    font-size: 20px;
     @include bp-small-only {
       text-align: center;
       margin-bottom: 50px;
@@ -285,6 +285,11 @@
         }
         @include bp-large {
           height: rem(600px, $text-bp-lg);
+        }
+        .copy-ctn {
+            @include bp-small-only {
+              margin-bottom: 50px; 
+            }
         }
       }
     }

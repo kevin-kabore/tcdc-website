@@ -2,8 +2,9 @@
   max-width: 1440px;
   margin: 0 auto;
   font-family: 'Muli', sans-serif;
-  padding: rem(20, $text-bp-sm);
+  color: #2C2424;
   overflow: hidden;
+  padding: rem(20, $text-bp-sm);
   @include bp-medium {
     padding: rem(75, $text-bp-md) rem(60, $text-bp-md);
   }
@@ -15,7 +16,8 @@
 
 .section.hero {
   background-color: $plum;
-  font-size: rem(27, $text-bp-sm);
+  // font-size: rem(30, $text-bp-sm);
+  font-size: 23px;
   color: #f4efee;
   @include bp-medium {
     padding-top: 0;
@@ -203,11 +205,11 @@
   background-color: $brick;
   color: #f4efee;
 
-  width: 256px;
+  width: 220px;
   font-size: 22px;
-  padding: 20px 25px;
+  padding: 15px 15px;
   border-radius: 5px;
-  margin: rem(20, $text-bp-sm) auto;
+  margin: rem(18, $text-bp-sm) auto;
   @include bp-medium {
     margin: 0 auto;
 
@@ -299,6 +301,13 @@
 }
 .box.green {
   background-color: #00b241;
+}
+
+
+.desktop-only {
+  @include bp-small-only {
+    display: none;
+  }
 }
 
 // Animations

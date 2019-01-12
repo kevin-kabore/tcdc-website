@@ -95,7 +95,7 @@
         justify-content: space-between;
       }
       li {
-        font-size: rem(18.5, $text-bp-sm);
+        font-size: 18.5px;
         @include bp-medium {
           font-size: rem(18.5, $text-bp-md);
         }
