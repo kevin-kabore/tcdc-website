@@ -174,16 +174,18 @@
   color: #f4efee;
 
   flex-direction: column;
+  font-size: rem(18px, $text-bp-sm);
 
   @include bp-small-only {
     margin-top: 50px;
+
   }
 
   @include bp-medium {
     flex-direction: row;
 
-    padding: rem(15, $text-bp-md) rem(15, $text-bp-md);
-    font-size: rem(13px, $text-bp-md);
+    padding: rem(15, $text-bp-md) rem(20, $text-bp-md);
+    font-size: rem(14px, $text-bp-md);
   }
 
   @include bp-large {
