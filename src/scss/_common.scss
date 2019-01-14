@@ -165,6 +165,40 @@
   }
 }
 
+
+.section.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c2424;
+  color: #f4efee;
+
+  flex-direction: column;
+
+  @include bp-small-only {
+    margin-top: 50px;
+  }
+
+  @include bp-medium {
+    flex-direction: row;
+
+    padding: rem(15, $text-bp-md) rem(15, $text-bp-md);
+    font-size: rem(13px, $text-bp-md);
+  }
+
+  @include bp-large {
+    padding: rem(15, $text-bp-lg) rem(20, $text-bp-lg); 
+    font-size: rem(14px, $text-bp-lg);
+  }
+  a {
+    text-decoration: none;
+    color: #f4efee;
+  }
+  a:hover, a:active {
+    color: #b8302a;
+  }
+}
+
 .bold {
   font-weight: bold;
 }
