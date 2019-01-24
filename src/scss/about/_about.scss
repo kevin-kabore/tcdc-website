@@ -11,8 +11,7 @@
 
     p.header {
       font-weight: 600;
-      text-decoration: underline;
-      
+
       font-size: 32px;
       @include bp-medium {
         font-size: rem(32px, $text-bp-md);
@@ -52,6 +51,19 @@
           margin-top: rem(25px, $text-bp-lg);
         }
       }
+    }
+  }
+}
+
+#about {
+  .section {
+    .header {
+      text-decoration: underline;
+    }
+  }
+  .section.history {
+    .copy-ctn p:first-of-type {
+      text-decoration: underline;
     }
   }
 }
